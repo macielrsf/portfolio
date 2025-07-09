@@ -1,7 +1,14 @@
 .skills-container {
+  justify-content: center;
+  display: flex;
+}
+
+.skills-content {
+  justify-content: center;
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  max-width: 40em;
   gap: 1rem;
 }
 

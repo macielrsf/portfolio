@@ -1,5 +1,6 @@
 import { HomeSection } from '../sections/HomeSection'
 import { SkillsSection } from '../sections/SkillsSection';
+import { ExperiencesSection } from '../sections/ExperiencesSection';
 
 import { Header } from './Header'
 import { Footer } from '../components/Footer'
@@ -19,6 +20,7 @@ export const Main = ({ loading }: mainProps) => {
         <Header showMenu={!loading} text="Maciel" />
         <HomeSection />
         <SkillsSection />
+        <ExperiencesSection />
         <Footer />
       </div>
     </div>

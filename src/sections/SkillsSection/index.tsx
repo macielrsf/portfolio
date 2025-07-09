@@ -3,7 +3,7 @@ import { SiRedux, SiTypescript } from 'react-icons/si';
 import {SectionTitle} from '../../components/SectionTitle';
 import Skills from './Components/Skills';
 
-const skills = [
+const coreSkills = [
   { name: 'React Native', icon: FaReact, iconColor: '#61dafb' },
   { name: 'Redux', icon: SiRedux, iconColor: '#764abc' },
   { name: 'ReactJS', icon: FaReact, iconColor: '#61dafb' },
@@ -16,7 +16,7 @@ export const SkillsSection = () => {
   return (
     <div>
       <SectionTitle title="Core Skills" />
-      <Skills skills={skills} />
+      <Skills skills={coreSkills} />
     </div>
   );
 }
