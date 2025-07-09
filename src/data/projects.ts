@@ -1,93 +1,40 @@
-export type Project = {
-  name: string;
-  description: string;
-  technologies: string[];
-  android?: string;
-  ios?: string;
-  image: string;
-  status: string;
-};
+import { Project } from '../types/Project'
 
 export const projects: Project[] = [
   {
-    name: "App HubSoft (Técnico)",
-    description:
-      "Aplicativo usado por técnicos de provedores, focado em suporte e manutenção em campo. Desenvolvido e mantido desde 2017 para a empresa HubSoft.",
-    technologies: [
-      "React Native",
-      "Redux",
-      "React Hooks",
-      "Styled-Components",
-      "Fastlane",
-      "Jest",
-      "Code Push",
-      "React Navigation",
-      "Redux Persist"
-    ],
-    android: "https://play.google.com/store/apps/details?id=com.hubsoft_app",
-    ios: "https://play.google.com/store/apps/details?id=com.hubsoft_app",
-    image: "/assets/mock.gif",
-    status: "Publicado",
+    "_id": "680e1c2f777b313c45d4c19d",
+    "title": "Full Stack Spotify",
+    "logo": "https://imgur.com/me3ih6I.png",
+    "mockup": "https://imgur.com/HbRgwU8.png",
+    "repository": "full-stack-spotify",
+    "slug": "full-stack-spotify",
+    "siteUrl": "https://full-stack-spotify-frontend-production.up.railway.app/",
+    "videoUrl": "https://www.youtube.com/embed/SjV-XXiyiss",
+    "stack": [
+      "682cfe1d34e57a1daab7731f",
+      "682d009c34e57a1daab77345",
+      "682d0b50e0e8b8ba4134df5b",
+      "682d0d66e0e8b8ba4134df83",
+      "682d11eae0e8b8ba4134dfab",
+      "682d1295e0e8b8ba4134dfb1"
+    ]
   },
   {
-    name: "App do Cliente (white-label)",
-    description:
-      "Aplicativo white-label utilizado por mais de 450 provedores de internet no Brasil. Customizado por cliente, com funcionalidades de atendimento, fatura e suporte.",
-    technologies: [
-      "React Native",
-      "Redux",
-      "React Hooks",
-      "Styled-Components",
-      "Fastlane",
-      "Jest",
-      "Code Push",
-      "React Navigation",
-      "Redux Persist"
-    ],
-    android:
-      "https://play.google.com/store/apps/details?id=com.hubsoft_client_app.allrede",
-    ios: "https://apps.apple.com/br/app/minha-allrede/id1615766177",
-    image: "/assets/mock.gif",
-    status: "Publicado",
-  },
-  {
-    name: "RAP10 Internet",
-    description:
-      "Aplicativo oficial da RAP10 Internet, focado em funcionalidades para clientes residenciais, como fatura, suporte, segunda via, pagamentos e notificações.",
-    technologies: [
-      "React Native",
-      "Context API",
-      "React Hooks",
-      "Styled-Components",
-      "Fastlane",
-      "Jest",
-      "Code Push",
-      "React Navigation"
-    ],
-    ios: "https://apps.apple.com/br/app/rap10-internet/id1610036916",
-    image: "/assets/mock.gif",
-    status: "Publicado (iOS)",
-  },
-  {
-    name: "Aplicativo da Paróquia (white-label)",
-    description:
-      "Aplicativo MVP desenvolvido com autenticação via Firebase, gerenciamento de conteúdo pela Firestore, Cloud Functions e upload de mídia. Idealizado para paróquias e comunidades religiosas.",
-    technologies: [
-      "React Native",
-      "Redux",
-      "React Hooks",
-      "Styled-Components",
-      "Fastlane",
-      "Jest",
-      "Code Push",
-      "React Navigation",
-      "TypeScript",
-      "Firebase Auth",
-      "Firebase Cloud Functions",
-      "Firebase Firestore",
-      "Firebase Storage"
-    ],
-    image: "/assets/mock.gif",
-    status: "MVP finalizado (não publicado)",
+    "_id": "682df7e8455bce6a725cd5f1",
+    "title": "Web Scraping NBA",
+    "logo": "https://imgur.com/gRSYRX6.png",
+    "mockup": "https://imgur.com/0rxwFlg.png",
+    "repository": "web-scraping-espn",
+    "slug": "web-scraping-nba",
+    "siteUrl": "https://web-scraping-espn.vercel.app/",
+    "videoUrl": "https://www.youtube.com/embed/-BXK3HkDqrs",
+    "stack": [
+      "682d0c37e0e8b8ba4134df7d",
+      "682d0b50e0e8b8ba4134df5b",
+      "682d009c34e57a1daab77345",
+      "682d11eae0e8b8ba4134dfab",
+      "682d11b0e0e8b8ba4134df99",
+      "682cfe1d34e57a1daab7731f"
+    ]
   }
-];
+]

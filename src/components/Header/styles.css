@@ -1,0 +1,47 @@
+.header {
+  font-family: 'Inter', sans-serif !important;
+  position: fixed;
+  height: 40px;
+  width: 100%;
+  background-color: #050038;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  z-index: 10; 
+}
+
+.logo a {
+  font-size: 25px;
+  color: white;
+  transition: 0.6s ease;
+  display: block;
+}
+
+.logo a:hover {
+  transform: translateY(-10px);
+}
+
+.logo span {
+  color: #003cac;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  margin-right: 60px;
+  list-style: none;
+  font-size: 16px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu li a:hover {
+  color: #003cac;
+}

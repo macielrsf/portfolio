@@ -1,0 +1,23 @@
+.outline-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  background-color: transparent;
+  border: 2px solid;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.outline-button:hover {
+  background-color: var(--hover-bg-color, #4b4bff);
+  color: #fff;
+}
+
+.btn-icon {
+  display: flex;
+  align-items: center;
+}
