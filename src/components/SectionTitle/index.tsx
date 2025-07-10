@@ -5,7 +5,7 @@ interface SectionTitleProps {
   title: string;
 }
 
-export const SectionTitle: React.FC<SectionTitleProps> = ({ title }) => {
+const SectionTitle: React.FC<SectionTitleProps> = ({ title }) => {
   return (
     <div className="section-title">
       <h2>{title}</h2>
@@ -13,3 +13,5 @@ export const SectionTitle: React.FC<SectionTitleProps> = ({ title }) => {
     </div>
   );
 };
+
+export default SectionTitle;

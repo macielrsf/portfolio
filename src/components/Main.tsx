@@ -1,10 +1,10 @@
-import { HomeSection } from '../sections/HomeSection'
-import { SkillsSection } from '../sections/SkillsSection';
-import { ExperiencesSection } from '../sections/ExperiencesSection';
+import HomeSection from '../sections/HomeSection'
+import SkillsSection from '../sections/SkillsSection';
+import ExperiencesSection from '../sections/ExperiencesSection';
 
-import { Header } from './Header'
-import { Footer } from '../components/Footer'
-import { LoadingScreen } from '../components/LoadingScreen'
+import Header from './Header'
+import Footer from '../components/Footer'
+import LoadingScreen from '../components/LoadingScreen'
 
 interface mainProps {
   loading: boolean

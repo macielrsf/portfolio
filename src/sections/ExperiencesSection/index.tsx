@@ -1,9 +1,11 @@
-import {SectionTitle} from '../../components/SectionTitle';
+import SectionTitle from '../../components/SectionTitle';
 
-export const ExperiencesSection = () => {
+const ExperiencesSection = () => {
   return (
     <div>
       <SectionTitle title="Experience" />
     </div>
   );
 }
+
+export default ExperiencesSection;

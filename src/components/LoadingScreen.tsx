@@ -1,4 +1,4 @@
-export const LoadingScreen = () => {
+const LoadingScreen = () => {
   return (
     <div className="loading-screen">
       <div className="spinner">{}</div>
@@ -6,3 +6,5 @@ export const LoadingScreen = () => {
     </div>
   )
 }
+
+export default LoadingScreen;

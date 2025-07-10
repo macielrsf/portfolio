@@ -10,7 +10,7 @@ const customStyles = {
   },
 }
 
-export const SocialMedia = () => {
+const SocialMedia = () => {
   return (
     <div className="contact">
       <a href="https://wa.me/5537999931412" target="_blank">
@@ -28,3 +28,5 @@ export const SocialMedia = () => {
     </div>
   )
 }
+
+export default SocialMedia;

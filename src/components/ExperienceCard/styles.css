@@ -1,0 +1,13 @@
+.experience-card {
+  background: #0c083f;
+  border-radius: 10px;
+  padding: 20px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.experience-footer {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #bbb;
+}

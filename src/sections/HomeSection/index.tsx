@@ -2,9 +2,9 @@ import { FiArrowRightCircle } from 'react-icons/fi';
 
 import avatar from '../../assets/photo.jpeg';
 
-import {OutlineButton} from '../../components/OutlineButton';
-import {Phone} from '../../components/Phone'
-import {SocialMedia} from '../../components/SocialMedia'
+import OutlineButton from '../../components/OutlineButton';
+import Phone from '../../components/Phone'
+import SocialMedia from '../../components/SocialMedia'
 import { SkillsTicker } from '../../components/SkillsTicker'
 
 import './styles.css';
@@ -19,7 +19,7 @@ const customStyles = {
   },
 }
 
-export const HomeSection = () => {
+const HomeSection = () => {
   return (
     <div id="home">
       <div className="container">
@@ -45,3 +45,5 @@ export const HomeSection = () => {
     </div>
   )
 }
+
+export default HomeSection;

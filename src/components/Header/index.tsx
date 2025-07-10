@@ -10,7 +10,7 @@ interface headerProps {
 
 import './styles.css';
 
-export const Header = ({ showMenu, text }: headerProps) => {
+const Header = ({ showMenu, text }: headerProps) => {
   const formatNameWithSpaces = useMemo(() => (text: string): string => {
     let newText = ''
     for (let i = 0; i < text.length; i++) {
@@ -56,3 +56,5 @@ export const Header = ({ showMenu, text }: headerProps) => {
     </div>
   )
 }
+
+export default Header;

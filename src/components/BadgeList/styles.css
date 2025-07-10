@@ -1,9 +1,9 @@
-.skills-container {
+.badge-container {
   justify-content: center;
   display: flex;
 }
 
-.skills-content {
+.badge-content {
   justify-content: center;
   align-items: center;
   display: flex;
@@ -12,11 +12,11 @@
   gap: 1rem;
 }
 
-.skill-name {
+.badge-name {
   font-family: 'Inter', sans-serif;
 }
 
-.skill-badge {
+.badge {
   background-color: rgba(255, 255, 255, 0.1);
   padding: 0.8rem 1.5rem;
   border-radius: 20px;
@@ -28,6 +28,6 @@
   transition: background-color 0.3s;
 }
 
-.skill-badge:hover {
+.badge:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }

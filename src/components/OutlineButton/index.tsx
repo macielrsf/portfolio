@@ -12,7 +12,7 @@ interface OutlineButtonProps {
   style?: React.CSSProperties;
 }
 
-export const OutlineButton: React.FC<OutlineButtonProps> = ({
+const OutlineButton: React.FC<OutlineButtonProps> = ({
   text,
   icon,
   borderColor = '#4b4bff',
@@ -48,3 +48,5 @@ export const OutlineButton: React.FC<OutlineButtonProps> = ({
     content
   );
 };
+
+export default OutlineButton;

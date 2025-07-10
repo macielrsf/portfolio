@@ -1,7 +1,8 @@
 import { FaReact, FaRocket, FaNode } from 'react-icons/fa';
 import { SiRedux, SiTypescript } from 'react-icons/si';
-import {SectionTitle} from '../../components/SectionTitle';
-import Skills from './Components/Skills';
+
+import SectionTitle from '../../components/SectionTitle';
+import BadgeList from '../../components/BadgeList';
 
 const coreSkills = [
   { name: 'React Native', icon: FaReact, iconColor: '#61dafb' },
@@ -12,11 +13,13 @@ const coreSkills = [
   { name: 'Node.js', icon: FaNode, iconColor: '#3c873a' },
 ];
 
-export const SkillsSection = () => {
+const SkillsSection = () => {
   return (
     <div>
       <SectionTitle title="Core Skills" />
-      <Skills skills={coreSkills} />
+      <BadgeList items={coreSkills} />
     </div>
   );
 }
+
+export default SkillsSection;

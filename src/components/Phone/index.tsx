@@ -12,7 +12,7 @@ import { getTechnologies } from '../../api-client/technologiesApi'
 
 import './styles.css';
 
-export const Phone = () => {
+const Phone = () => {
   const { phoneOn, phoneLoading, text, showApps, appsLoading, bootPhone } =
     usePhoneBoot()
 
@@ -93,3 +93,5 @@ export const Phone = () => {
     </div>
   )
 }
+
+export default Phone;
