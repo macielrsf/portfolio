@@ -1,47 +1,114 @@
+/* Mobile first */
 .header {
-  font-family: 'Inter', sans-serif !important;
+  font-family: 'Inter', sans-serif;
   position: fixed;
-  height: 40px;
   width: 100%;
   background-color: #050038;
   color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 10;
   padding: 15px;
-  z-index: 10; 
 }
 
 .logo a {
-  font-size: 25px;
+  font-size: 20px;
   color: white;
-  transition: 0.6s ease;
-  display: block;
+  text-decoration: none;
+  transition: 0.3s ease;
 }
 
 .logo a:hover {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
 }
 
 .logo span {
   color: #003cac;
 }
 
+/* Hamburger button */
+.menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 38px;
+}
+
+/* Menu hidden by default (mobile) */
 .menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 50px;
+  background-color: #ffffff;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 4px;
+  width: 200px;
+}
+
+.menu.open {
   display: flex;
 }
 
 .menu li {
-  margin-right: 60px;
   list-style: none;
-  font-size: 16px;
+  margin: 10px 0;
 }
 
 .menu li a {
   text-decoration: none;
-  color: white;
+  color: #050038;
+  font-size: 16px;
 }
 
 .menu li a:hover {
   color: #003cac;
+}
+
+.social-media-icon {
+  vertical-align: middle;
+}
+
+/* Tablet (≥ 768px) */
+@media (min-width: 768px) {
+  .menu {
+    top: 65px;
+    right: 20px;
+    width: 250px;
+  }
+
+  .logo a {
+    font-size: 22px;
+  }
+}
+
+/* Desktop (≥ 1024px) */
+@media (min-width: 1024px) {
+  .menu {
+    position: static;
+    display: flex !important;
+    flex-direction: row;
+    background: none;
+    padding: 15px;
+    width: auto;
+  }
+
+  .menu li {
+    margin: 0 30px;
+  }
+
+  .menu li a {
+    color: #ffffff;
+    font-size: 15px;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .logo a {
+    font-size: 25px;
+  }
 }

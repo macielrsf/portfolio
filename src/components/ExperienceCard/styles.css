@@ -1,13 +1,56 @@
 .experience-card {
-  background: #0c083f;
-  border-radius: 10px;
-  padding: 20px;
-  color: #fff;
-  margin-bottom: 20px;
+  width: 60%;
+  align-self: center;
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid;
+  border-radius: 12px;
+  border-color: #4b4bff;
 }
 
-.experience-footer {
-  margin-top: 10px;
+.experience-content {
+  padding: 20px;
+}
+
+.experience-card:hover {
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+.experience-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.experience-company {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ccc;
+  margin-bottom: 12px;
+}
+
+.experience-description {
+  font-family: 'Inter', sans-serif;
   font-size: 0.9rem;
-  color: #bbb;
+  line-height: 1.5;
+  color: #e0e0e0;
+}
+
+.experience-period {
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  align-items: center;
+  font-size: 0.85rem;
+  color: #aaa;
+  margin-top: 16px;
+}
+
+.experience-icon {
+  margin-right: 8px;
+}
+
+.experience-badges {
+  margin-top: 16px;
 }

@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react'
-import { getSkills } from '../api-client/skillsApi'
-import { Skill } from '../types/Skill'
+
+import './styles.css';
+
+import { getSkills } from '../../api-client/skillsApi'
+import { Skill } from '../../types/Skill'
 
 export const SkillsTicker = () => {
   const [skills, setSkills] = useState<Skill[]>([])

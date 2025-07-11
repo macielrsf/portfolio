@@ -3,8 +3,7 @@ import SkillsSection from '../sections/SkillsSection';
 import ExperiencesSection from '../sections/ExperiencesSection';
 
 import Header from './Header'
-import Footer from '../components/Footer'
-import LoadingScreen from '../components/LoadingScreen'
+import LoadingScreen from './LoadingScreen'
 
 interface mainProps {
   loading: boolean
@@ -13,7 +12,7 @@ interface mainProps {
 export const Main = ({ loading }: mainProps) => {
   return (
     <div className="main-page">
-      {loading && <LoadingScreen />}
+      {loading ? <LoadingScreen /> : null}
       <div
         style={{ opacity: loading ? 0 : 1, transition: 'opacity 0.5s ease' }}
       >
@@ -21,7 +20,6 @@ export const Main = ({ loading }: mainProps) => {
         <HomeSection />
         <SkillsSection />
         <ExperiencesSection />
-        <Footer />
       </div>
     </div>
   )

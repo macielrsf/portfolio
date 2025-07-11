@@ -1,5 +1,7 @@
 import { CircleChevronLeft, CircleChevronRight } from 'lucide-react'
 
+import './styles.css';
+
 interface PaginationDotsProps<T> {
   array: T[]
   pageSize: number

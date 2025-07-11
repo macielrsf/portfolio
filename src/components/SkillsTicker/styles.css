@@ -1,0 +1,46 @@
+.skills-ticker {
+  margin-top: 30px;
+  overflow: hidden;
+  width: 100%;
+  background: #003cac;
+  padding: 10px 0;
+}
+
+.skills-ticker__ticker {
+  display: flex;
+  gap: 40px;
+  animation: scroll 30s linear infinite;
+  width: fit-content;
+}
+
+.skills-ticker__ticker-item {
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+  font-size: 15px;
+  font-weight: 500;
+  opacity: 0.8;
+  transition: transform 0.3s ease;
+}
+
+.skills-ticker__ticker-item:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+.skills-ticker__ticker-item .icon img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
