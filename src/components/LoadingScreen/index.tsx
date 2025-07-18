@@ -1,3 +1,5 @@
+import './styles.css';
+
 const LoadingScreen = () => {
   return (
     <div className="loading-screen">

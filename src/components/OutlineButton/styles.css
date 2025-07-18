@@ -10,14 +10,20 @@
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
+  color: var(--color-text);
 }
 
 .outline-button:hover {
-  background-color: var(--hover-bg-color, #4b4bff);
-  color: #fff;
+  background-color: var(--hover-bg-color, var(--color-primary));
+  color: var(--color-background);
 }
 
 .btn-icon {
   display: flex;
   align-items: center;
+  color: var(--color-text);
+}
+
+.btn-text {
+  color: var(--color-text);
 }

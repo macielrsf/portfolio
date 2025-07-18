@@ -1,8 +1,9 @@
-import { useMemo, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useMemo, useState, useEffect } from 'react';
+import { FaMoon } from "react-icons/fa";
 import { MdWbSunny } from 'react-icons/md';
 import { TbWorld } from 'react-icons/tb';
 import { GiHamburgerMenu } from 'react-icons/gi';
+
 import './styles.css';
 
 interface headerProps {
@@ -12,6 +13,11 @@ interface headerProps {
 
 const Header = ({ showMenu, text }: headerProps) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [theme, setTheme] = useState<'light' | 'dark'>('dark');
+
+    useEffect(() => {
+      document.documentElement.setAttribute('data-theme', theme);
+    }, [theme]);
 
   const formatNameWithSpaces = useMemo(() => (text: string): string => {
     let newText = '';
@@ -34,23 +40,33 @@ const Header = ({ showMenu, text }: headerProps) => {
       </h2>
 
       <button className="menu-toggle" onClick={toggleMobileMenu} aria-label="Toggle Menu">
-        <GiHamburgerMenu size={24} color="white" />
+        <GiHamburgerMenu size={24} />
       </button>
 
       {showMenu && (
         <ul className={`menu ${isMobileMenuOpen ? 'open' : ''}`}>
           <li><a href="#home">About</a></li>
-          <li><a href="#about">Experience</a></li>
+          <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><Link to="/login">Contact</Link></li>
+          <li><a href="#contact">Contact</a></li>
           <li>
-            <a href="https://wa.me/5537999931412" target="_blank" rel="noopener noreferrer">
-              <MdWbSunny className="social-media-icon" color="white" size={20} />
+            <a onClick={() => setTheme(prev => prev === 'light' ? 'dark' : 'light')}>
+              {theme === 'dark' ? ( 
+                <MdWbSunny 
+                  className="social-media-icon" 
+                  size={20}
+                />
+              ) : (
+                <FaMoon 
+                  className="social-media-icon" 
+                  size={20}
+                />
+              )}
             </a>
           </li>
           <li>
             <a href="https://wa.me/5537999931412" target="_blank" rel="noopener noreferrer">
-              <TbWorld className="social-media-icon" color="white" size={20} />
+              <TbWorld className="social-media-icon" size={20} />
             </a>
           </li>
         </ul>

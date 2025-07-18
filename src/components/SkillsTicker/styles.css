@@ -2,7 +2,7 @@
   margin-top: 30px;
   overflow: hidden;
   width: 100%;
-  background: #003cac;
+  background: var(--color-skills-ticker-bg);
   padding: 10px 0;
 }
 

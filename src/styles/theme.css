@@ -1,0 +1,94 @@
+:root {
+  /* Cores principais */
+  --color-text: #ffffff;
+  --color-background: #121212;
+  --color-header-background: #050038;
+  
+  /* Cores de gradiente e fundo */
+  --color-gradient-start: rgba(5, 0, 56, 1);
+  --color-gradient-end: rgba(0, 0, 0, 1);
+  
+  /* Cores de destaque e acento */
+  --color-primary: #4b4bff;
+  --color-primary-hover: #003cac;
+  --color-accent: #1e5eff;
+  --color-accent-light: #0815ca;
+  
+  /* Cores de texto secundárias */
+  --color-text-secondary: #ccc;
+  --color-text-muted: #aaa;
+  --color-text-light: #e0e0e0;
+  --color-text-gray: #aca7ad;
+  
+  /* Cores de borda e separadores */
+  --color-border: #4b4bff;
+  --color-border-light: #d9d9d9;
+  
+  /* Cores de overlay e transparência */
+  --color-overlay-light: rgba(255, 255, 255, 0.1);
+  --color-overlay-medium: rgba(255, 255, 255, 0.2);
+  --color-overlay-dark: rgba(0, 0, 0, 0.25);
+  --color-spinner-border: rgba(255, 255, 255, 0.5);
+  
+  /* Cores de efeitos especiais */
+  --color-pulse: rgba(255, 0, 128, 0.4);
+  --color-phone-shadow: rgba(186, 10, 229, 0.7);
+  --color-logo-shadow: #646cffaa;
+  --color-react-shadow: #61dafbaa;
+  
+  /* Cores de estado */
+  --color-disabled: rgba(255, 255, 255, 0.3);
+  --color-dot-inactive: rgba(255, 255, 255, 0.4);
+  
+  /* Cores de fundo específicas */
+  --color-skills-ticker-bg: #003cac;
+  --color-search-bg: #ffffff;
+  --color-search-text: #000000;
+}
+
+[data-theme='light'] {
+  --color-text: #000000;
+  --color-background: #ffffff;
+  --color-header-background: #f8f9fa;
+  
+  /* Cores de gradiente e fundo */
+  --color-gradient-start: rgba(248, 249, 250, 1);
+  --color-gradient-end: rgba(255, 255, 255, 1);
+  
+  /* Cores de destaque e acento */
+  --color-primary: #4b4bff;
+  --color-primary-hover: #003cac;
+  --color-accent: #1e5eff;
+  --color-accent-light: #0815ca;
+  
+  /* Cores de texto secundárias */
+  --color-text-secondary: #666;
+  --color-text-muted: #888;
+  --color-text-light: #333;
+  --color-text-gray: #666;
+  
+  /* Cores de borda e separadores */
+  --color-border: #4b4bff;
+  --color-border-light: #d9d9d9;
+  
+  /* Cores de overlay e transparência */
+  --color-overlay-light: rgba(0, 0, 0, 0.1);
+  --color-overlay-medium: rgba(0, 0, 0, 0.2);
+  --color-overlay-dark: rgba(0, 0, 0, 0.1);
+  --color-spinner-border: rgba(0, 0, 0, 0.3);
+  
+  /* Cores de efeitos especiais */
+  --color-pulse: rgba(255, 0, 128, 0.4);
+  --color-phone-shadow: rgba(186, 10, 229, 0.7);
+  --color-logo-shadow: #646cffaa;
+  --color-react-shadow: #61dafbaa;
+  
+  /* Cores de estado */
+  --color-disabled: rgba(0, 0, 0, 0.3);
+  --color-dot-inactive: rgba(0, 0, 0, 0.4);
+  
+  /* Cores de fundo específicas */
+  --color-skills-ticker-bg: #d9d9d9;
+  --color-search-bg: #f8f9fa;
+  --color-search-text: #000000;
+}

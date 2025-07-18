@@ -1,0 +1,21 @@
+/* MOBILE FIRST (smartphones, até 767px) */
+.badge-name {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+}
+
+.badge {
+  background-color: var(--color-overlay-light);
+  padding: 0.8rem 1.5rem;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: var(--color-text);
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.badge:hover {
+  background-color: var(--color-overlay-medium);
+}

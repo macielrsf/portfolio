@@ -1,21 +1,24 @@
 import React from 'react';
 
-import {Badge} from '../../types/Badge';
+import { Badge as BadgeProps } from '../../types/Badge';
 import './styles.css';
+import Badge from '../Badge';
 
 interface BadgeListProps {
-  items: Badge[];
+  items: BadgeProps[];
+  badgeNameStyle?: React.CSSProperties;
 }
 
-const BadgeList: React.FC<BadgeListProps> = ({ items }) => {
+const BadgeList: React.FC<BadgeListProps> = ({ items, badgeNameStyle }) => {
   return (
     <div className="badge-container">
       <div className="badge-content">
-        {items.map((item: Badge, index: number) => (
-          <div key={index} className="badge">
-            {item.icon ? <item.icon size={20} color={item.iconColor || '#fff'} /> : null}
-            <span className="badge-name">{item.name}</span>
-          </div>
+        {items.map((item: BadgeProps, index: number) => (
+          <Badge 
+            index={index} 
+            item={item} 
+            badgeNameStyle={badgeNameStyle}
+          />
         ))}
       </div>
     </div>

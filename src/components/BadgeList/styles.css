@@ -1,12 +1,11 @@
+/* MOBILE FIRST (smartphones, até 767px) */
 .badge-container {
-  justify-content: center;
   display: flex;
 }
 
 .badge-content {
-  justify-content: center;
-  align-items: center;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   max-width: 40em;
   gap: 1rem;
@@ -18,17 +17,39 @@
 }
 
 .badge {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--color-overlay-light);
   padding: 0.8rem 1.5rem;
   border-radius: 20px;
   display: flex;
   align-items: center;
   gap: 0.8rem;
-  color: white;
+  color: var(--color-text);
   font-weight: 500;
   transition: background-color 0.3s;
 }
 
 .badge:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: var(--color-overlay-medium);
+}
+
+/* TABLET (mínimo 768px) */
+@media (min-width: 768px) {
+  .badge-content {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    max-width: 40em;
+    gap: 1rem;
+  }
+}
+
+/* DESKTOP (mínimo 1200px) */
+@media (min-width: 1200px) {
+  .badge-content {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    max-width: 40em;
+    gap: 1rem;
+  }
 }

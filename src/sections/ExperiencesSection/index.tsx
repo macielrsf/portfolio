@@ -1,9 +1,9 @@
 import SectionTitle from '../../components/SectionTitle';
-import ExperienceList from '../../components/ExperienceList';
+import ExperienceList from './components/ExperienceList';
 
 const ExperiencesSection = () => {
   return (
-    <div>
+    <div id="experience">
       <SectionTitle title="Experience" />
       <ExperienceList />
     </div>

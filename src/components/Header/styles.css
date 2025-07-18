@@ -3,8 +3,8 @@
   font-family: 'Inter', sans-serif;
   position: fixed;
   width: 100%;
-  background-color: #050038;
-  color: white;
+  background-color: var(--color-header-background);
+  color: var(--color-text);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -14,7 +14,7 @@
 
 .logo a {
   font-size: 20px;
-  color: white;
+  color: var(--color-text);
   text-decoration: none;
   transition: 0.3s ease;
 }
@@ -24,7 +24,7 @@
 }
 
 .logo span {
-  color: #003cac;
+  color: var(--color-text);
 }
 
 /* Hamburger button */
@@ -33,6 +33,7 @@
   border: none;
   cursor: pointer;
   margin-right: 38px;
+  color: var(--color-text);
 }
 
 /* Menu hidden by default (mobile) */
@@ -41,7 +42,7 @@
   position: absolute;
   top: 60px;
   right: 50px;
-  background-color: #ffffff;
+  background-color: var(--color-text);
   flex-direction: column;
   padding: 10px;
   border-radius: 4px;
@@ -59,16 +60,17 @@
 
 .menu li a {
   text-decoration: none;
-  color: #050038;
+  color: var(--color-header-background);
   font-size: 16px;
 }
 
 .menu li a:hover {
-  color: #003cac;
+  color: var(--color-primary-hover);
 }
 
 .social-media-icon {
   vertical-align: middle;
+  color: var(--color-text);
 }
 
 /* Tablet (≥ 768px) */
@@ -100,7 +102,7 @@
   }
 
   .menu li a {
-    color: #ffffff;
+    color: var(--color-text);
     font-size: 15px;
   }
 

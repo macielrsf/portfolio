@@ -1,6 +1,8 @@
 import HomeSection from '../sections/HomeSection'
 import SkillsSection from '../sections/SkillsSection';
 import ExperiencesSection from '../sections/ExperiencesSection';
+import ProjectsSection from '../sections/ProjectsSection';
+import ContactSection from '../sections/ContactSection';
 
 import Header from './Header'
 import LoadingScreen from './LoadingScreen'
@@ -20,6 +22,8 @@ export const Main = ({ loading }: mainProps) => {
         <HomeSection />
         <SkillsSection />
         <ExperiencesSection />
+        <ProjectsSection />
+        <ContactSection />
       </div>
     </div>
   )

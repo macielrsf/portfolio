@@ -1,13 +1,19 @@
 import React from 'react';
 import { FiCalendar } from 'react-icons/fi';
 
-import {Experience} from '../../types/Experience';
-import BadgeList from '../BadgeList';
+import {Experience} from '../../../../types/Experience';
+import BadgeList from '../../../../components/BadgeList';
 
 import './styles.css';
 
 interface ExperienceCardProps {
   experience: Experience;
+}
+
+const customStyles = {
+  badgeListStyle: {
+    fontSize: 12
+  }
 }
 
 const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
@@ -23,8 +29,9 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
           <span>{experience.period}</span>
         </div>
 
+        <h4 className="experience-technologies">Technologies</h4>
         <div className="experience-badges">
-          <BadgeList items={experience.technologies} />
+          <BadgeList items={experience.technologies} badgeNameStyle={customStyles.badgeListStyle} />
         </div>
       </div>
     </div>

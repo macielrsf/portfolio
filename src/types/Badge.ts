@@ -4,4 +4,5 @@ export interface Badge {
   name: string;
   icon?: IconType;
   iconColor?: string;
+  uri?: string;
 }

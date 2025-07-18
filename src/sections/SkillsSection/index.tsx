@@ -4,6 +4,8 @@ import { SiRedux, SiTypescript } from 'react-icons/si';
 import SectionTitle from '../../components/SectionTitle';
 import BadgeList from '../../components/BadgeList';
 
+import './styles.css';
+
 const coreSkills = [
   { name: 'React Native', icon: FaReact, iconColor: '#61dafb' },
   { name: 'Redux', icon: SiRedux, iconColor: '#764abc' },
@@ -17,7 +19,9 @@ const SkillsSection = () => {
   return (
     <div>
       <SectionTitle title="Core Skills" />
-      <BadgeList items={coreSkills} />
+      <div className="core-skills-content">
+        <BadgeList items={coreSkills} />
+      </div>
     </div>
   );
 }

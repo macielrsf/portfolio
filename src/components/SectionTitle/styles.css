@@ -1,13 +1,13 @@
 .section-title {
   font-family: 'Inter', sans-serif;
   text-align: center;
-  margin: 4rem 0 4rem 0;
+  margin: 3.5rem 0 3.5rem 0;
 }
 
 .section-title h2 {
   display: inline-block;
   position: relative;
-  color: white;
+  color: var(--color-text);
   font-size: 1.8rem;
   font-weight: bold;
   margin: 0;
@@ -21,6 +21,6 @@
   left: 0;
   width: 100%;
   height: 3px;
-  background-color: #1e5eff;
+  background-color: var(--color-accent);
   border-radius: 2px;
 }

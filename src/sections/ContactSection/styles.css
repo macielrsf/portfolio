@@ -1,0 +1,24 @@
+.contact-content {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.contact-text {
+  font-size: 18px;
+  font-family: 'Inter', sans-serif;
+  color: var(--color-text);
+  padding-bottom: 1.5em;
+}
+
+.contact-copyright-text {
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  color: var(--color-text);
+  padding-bottom: 1.5em;
+}
+
+.contact-copyright-content {
+  padding: 8em 0 3em 0;
+}

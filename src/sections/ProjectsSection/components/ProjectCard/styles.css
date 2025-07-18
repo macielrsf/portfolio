@@ -1,0 +1,150 @@
+/* MOBILE FIRST (smartphones, até 767px) */
+.project-card {
+  width: 90%;
+  align-self: center;
+  color: var(--color-text);
+  background-color: transparent;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  margin-bottom: 3em;
+}
+
+.project-content {
+  flex-direction: column;
+  padding: 1.2em;
+}
+
+.project-row {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  display: flex;
+}
+
+.project-center {
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 10px;
+  display: flex;
+}
+
+.project-img {
+  border-radius: 20px;
+  height: 60px;
+  width: 60px;
+}
+
+.project-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.project-description {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--color-text-light);
+  text-align: justify;
+  margin-top: 15px;
+}
+
+.project-technologies {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  margin-top: 20px;
+}
+
+.project-badges {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.project-card:hover {
+  box-shadow: 0 6px 14px var(--color-overlay-dark);
+}
+
+
+/* TABLET (mínimo 768px) */
+@media (min-width: 768px) {
+  .project-card {
+    width: 80%;
+  }
+
+  .project-content {
+    flex-direction: row;
+    padding: 32px;
+  }
+
+  .project-left {
+    flex: 0.13;
+    justify-content: flex-start;
+    margin-bottom: 0;
+  }
+
+  .project-body {
+    flex: 0.5;
+  }
+
+  .project-right {
+    flex: 0.37;
+    justify-content: flex-end;
+    margin-bottom: 0;
+  }
+
+  .project-title,
+  .project-technologies {
+    text-align: left;
+  }
+
+  .project-badges {
+    justify-content: flex-start;
+  }
+}
+
+
+/* DESKTOP (mínimo 1200px) */
+@media (min-width: 1200px) {
+  .project-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .project-card {
+    width: 60%;
+  }
+
+  .project-content {
+    padding: 40px;
+  }
+
+  .project-img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .project-title {
+    font-size: 24px;
+  }
+
+  .project-description {
+    font-size: 16px;
+  }
+
+  .project-technologies {
+    font-size: 16px;
+  }
+
+  .project-left,
+  .project-right {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}

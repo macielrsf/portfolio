@@ -1,40 +1,95 @@
+import { FcAndroidOs } from "react-icons/fc";
+import { FaApple } from "react-icons/fa";
+
+import hubsoftLogo from '../assets/hubsoft-logo.webp';
+import allredeLogo from '../assets/allrede-logo.webp';
+import sempreLogo from '../assets/sempre-logo.jpg';
+
 import { Project } from '../types/Project'
 
 export const projects: Project[] = [
   {
-    "_id": "680e1c2f777b313c45d4c19d",
-    "title": "Full Stack Spotify",
-    "logo": "https://imgur.com/me3ih6I.png",
-    "mockup": "https://imgur.com/HbRgwU8.png",
-    "repository": "full-stack-spotify",
-    "slug": "full-stack-spotify",
-    "siteUrl": "https://full-stack-spotify-frontend-production.up.railway.app/",
-    "videoUrl": "https://www.youtube.com/embed/SjV-XXiyiss",
-    "stack": [
-      "682cfe1d34e57a1daab7731f",
-      "682d009c34e57a1daab77345",
-      "682d0b50e0e8b8ba4134df5b",
-      "682d0d66e0e8b8ba4134df83",
-      "682d11eae0e8b8ba4134dfab",
-      "682d1295e0e8b8ba4134dfb1"
-    ]
+    "_id": "f68ffcf8-cfeb-41f9-8699-1d9b4404ca85",
+    "title": "Hubsoft App",
+    "description": "A field service app for ISP technicians.",
+    "img": hubsoftLogo,
+    technologies: [
+      {name: 'React Native', uri: 'https://reactnative.dev/'}, 
+      {name: 'Redux', uri: 'https://redux.js.org/'}, 
+      {name: 'CI/CD'}, 
+      {name: 'Hooks', uri: 'https://react.dev/reference/react/hooks'},
+      {name: 'Code Push', uri: 'https://github.com/microsoft/react-native-code-push'},
+      {name: 'Fastlane', uri: 'https://fastlane.tools/'},
+      {name: 'Flipper', uri: 'https://fbflipper.com/'},
+      {name: 'Jest', uri: 'https://jestjs.io/'},
+      {name: 'Testing Library', uri: 'https://callstack.github.io/react-native-testing-library/'},
+    ],
+    buttons: [{
+      id: "0154472d-55c0-402e-9e94-066596d6db22",
+      name: "Android",
+      uri: "https://play.google.com/store/apps/details?id=com.hubsoft_app",
+      icon: FcAndroidOs 
+    }, {
+      id: "a57ada99-44d2-482a-9e79-e91ccedd0957",
+      name: "iOS",
+      uri: "https://apps.apple.com/br/app/hubsoft/id1476554009",
+      icon: FaApple
+    }]
   },
   {
-    "_id": "682df7e8455bce6a725cd5f1",
-    "title": "Web Scraping NBA",
-    "logo": "https://imgur.com/gRSYRX6.png",
-    "mockup": "https://imgur.com/0rxwFlg.png",
-    "repository": "web-scraping-espn",
-    "slug": "web-scraping-nba",
-    "siteUrl": "https://web-scraping-espn.vercel.app/",
-    "videoUrl": "https://www.youtube.com/embed/-BXK3HkDqrs",
-    "stack": [
-      "682d0c37e0e8b8ba4134df7d",
-      "682d0b50e0e8b8ba4134df5b",
-      "682d009c34e57a1daab77345",
-      "682d11eae0e8b8ba4134dfab",
-      "682d11b0e0e8b8ba4134df99",
-      "682cfe1d34e57a1daab7731f"
-    ]
-  }
+    "_id": "93b99693-b2a3-4825-8b2d-066d08542e06",
+    "title": "All Rede App",
+    "description": "A white-label app for All Rede customers",
+    "img": allredeLogo,
+    technologies: [
+      {name: 'React Native', uri: 'https://reactnative.dev/'}, 
+      {name: 'Redux', uri: 'https://redux.js.org/'}, 
+      {name: 'CI/CD'}, 
+      {name: 'Hooks', uri: 'https://react.dev/reference/react/hooks'},
+      {name: 'Code Push', uri: 'https://github.com/microsoft/react-native-code-push'},
+      {name: 'Fastlane', uri: 'https://fastlane.tools/'},
+      {name: 'Flipper', uri: 'https://fbflipper.com/'},
+      {name: 'Jest', uri: 'https://jestjs.io/'},
+      {name: 'Testing Library', uri: 'https://callstack.github.io/react-native-testing-library/'},
+    ],
+    buttons: [{
+      id: "0154472d-55c0-402e-9e94-066596d6db22",
+      name: "Android",
+      uri: "https://play.google.com/store/apps/details?id=com.hubsoft_client_app.allrede",
+      icon: FcAndroidOs 
+    }, {
+      id: "a57ada99-44d2-482a-9e79-e91ccedd0957",
+      name: "iOS",
+      uri: "https://apps.apple.com/br/app/minha-allrede/id1615766177",
+      icon: FaApple
+    }]
+  },
+  {
+    "_id": "7b1b8fb5-85b0-4515-bfcf-2d673ecc491f",
+    "title": "Sempre Internet App",
+    "description": "A white-label app for Sempre Internet customers",
+    "img": sempreLogo,
+    technologies: [
+      {name: 'React Native', uri: 'https://reactnative.dev/'}, 
+      {name: 'Redux', uri: 'https://redux.js.org/'}, 
+      {name: 'CI/CD'}, 
+      {name: 'Hooks', uri: 'https://react.dev/reference/react/hooks'},
+      {name: 'Code Push', uri: 'https://github.com/microsoft/react-native-code-push'},
+      {name: 'Fastlane', uri: 'https://fastlane.tools/'},
+      {name: 'Flipper', uri: 'https://fbflipper.com/'},
+      {name: 'Jest', uri: 'https://jestjs.io/'},
+      {name: 'Testing Library', uri: 'https://callstack.github.io/react-native-testing-library/'},
+    ],
+    buttons: [{
+      id: "0154472d-55c0-402e-9e94-066596d6db22",
+      name: "Android",
+      uri: "https://play.google.com/store/apps/details?id=com.hubsoft_client_app.sempre",
+      icon: FcAndroidOs 
+    }, {
+      id: "a57ada99-44d2-482a-9e79-e91ccedd0957",
+      name: "iOS",
+      uri: "https://apps.apple.com/br/app/sempre-internet/id1523528026",
+      icon: FaApple
+    }]
+  },
 ]

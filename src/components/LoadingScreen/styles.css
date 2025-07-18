@@ -13,14 +13,14 @@
 .loading-screen p {
   font-family: 'Inter', sans-serif;
   margin: 20px 0 0 10px;
-  color: #aca7ad;
+  color: var(--color-text-gray);
   font-size: 1.2rem;
   animation: fade 1.5s infinite ease-in-out;
 }
 
 .spinner {
-  border: 5px solid rgba(255, 255, 255, 0.5);
-  border-top: 5px solid #0815ca;
+  border: 5px solid var(--color-spinner-border);
+  border-top: 5px solid var(--color-accent-light);
   border-radius: 100%;
   width: 50px;
   height: 50px;

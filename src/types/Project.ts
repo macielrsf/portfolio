@@ -1,12 +1,19 @@
+import { IconType } from 'react-icons';
+import { Badge } from './Badge';
+
+interface Button {
+  id: string;
+  name: string;
+  icon?: IconType;
+  uri: string;
+}
+
 interface BaseProject {
   title: string;
-  logo: string;
-  mockup: string;
-  repository: string;
-  slug?: string;
-  siteUrl: string;
-  videoUrl: string;
-  stack: string[];
+  description: string;
+  img: string;
+  buttons: Button[];
+  technologies: Badge[];
 }
 
 export type CreateProject = BaseProject;

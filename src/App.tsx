@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react'
 
+import './styles/theme.css';
+
 import { Main } from './components/Main'
 
 function App() {
