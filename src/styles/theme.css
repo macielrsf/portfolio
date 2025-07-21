@@ -88,7 +88,8 @@
   --color-dot-inactive: rgba(0, 0, 0, 0.4);
   
   /* Cores de fundo específicas */
-  --color-skills-ticker-bg: #d9d9d9;
+  --color-skills-ticker-bg: #646cffaa;
+  --color-skills-ticker-item-text: #ffffff;
   --color-search-bg: #f8f9fa;
   --color-search-text: #000000;
 }

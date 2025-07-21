@@ -1,10 +1,9 @@
 import { useMemo, useState, useEffect } from 'react';
 import { FaMoon } from "react-icons/fa";
 import { MdWbSunny } from 'react-icons/md';
-import { TbWorld } from 'react-icons/tb';
 import { GiHamburgerMenu } from 'react-icons/gi';
-import { IoLanguage } from 'react-icons/io5';
 import { useLanguage } from '../../contexts/LanguageContext';
+import ReactWorldFlag from 'react-world-flags';
 
 import './styles.css';
 
@@ -16,7 +15,7 @@ interface headerProps {
 const Header = ({ showMenu, text }: headerProps) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [theme, setTheme] = useState<'light' | 'dark'>('dark');
-  const { t, toggleLanguage } = useLanguage();
+  const { t, toggleLanguage, language } = useLanguage();
 
     useEffect(() => {
       document.documentElement.setAttribute('data-theme', theme);
@@ -68,8 +67,15 @@ const Header = ({ showMenu, text }: headerProps) => {
             </a>
           </li>
           <li>
-            <a onClick={toggleLanguage} style={{ cursor: 'pointer' }}>
-              <IoLanguage className="social-media-icon" size={20} />
+            <a onClick={toggleLanguage} className="language-toggle">
+              <ReactWorldFlag
+                code={language === 'en' ? 'BR' : 'US'}
+                className="language-toggle-flag"
+                title={language === 'en' ? 'Português (Brasil)' : 'English (US)'}
+              />
+              <span>
+                {language === 'en' ? 'PT-BR' : 'EN'}
+              </span>
             </a>
           </li>
         </ul>

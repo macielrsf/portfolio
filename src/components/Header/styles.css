@@ -73,6 +73,24 @@
   color: var(--color-text);
 }
 
+.language-toggle {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.language-toggle span {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.language-toggle-flag {
+  width: 1.3em;
+  height: 1.3em;
+  box-shadow: 0 0 2px #0002;
+}
+
 /* Tablet (≥ 768px) */
 @media (min-width: 768px) {
   .menu {

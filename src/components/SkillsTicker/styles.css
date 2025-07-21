@@ -23,6 +23,7 @@
   font-weight: 500;
   opacity: 0.8;
   transition: transform 0.3s ease;
+  color: var(--color-skills-ticker-item-text);
 }
 
 .skills-ticker__ticker-item:hover {
