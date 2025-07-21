@@ -1,19 +1,16 @@
+import { Project } from '../../types/Project';
+import hubsoftLogo from '../../assets/hubsoft-logo.webp';
+import allredeLogo from '../../assets/allrede-logo.webp';
+import sempreLogo from '../../assets/sempre-logo.jpg';
 import { FcAndroidOs } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
 
-import hubsoftLogo from '../assets/hubsoft-logo.webp';
-import allredeLogo from '../assets/allrede-logo.webp';
-import sempreLogo from '../assets/sempre-logo.jpg';
-
-import { Project } from '../types/Project'
-import { useTranslatedProjects } from '../utils/translationUtils';
-
 export const projects: Project[] = [
   {
-    "_id": "f68ffcf8-cfeb-41f9-8699-1d9b4404ca85",
-    "title": "Hubsoft App",
-    "description": "A field service app for ISP technicians.",
-    "img": hubsoftLogo,
+    _id: "f68ffcf8-cfeb-41f9-8699-1d9b4404ca85",
+    title: "Hubsoft App",
+    description: "A field service app for ISP technicians.",
+    img: hubsoftLogo,
     technologies: [
       {name: 'React Native', uri: 'https://reactnative.dev/'}, 
       {name: 'Redux', uri: 'https://redux.js.org/'}, 
@@ -38,10 +35,10 @@ export const projects: Project[] = [
     }]
   },
   {
-    "_id": "93b99693-b2a3-4825-8b2d-066d08542e06",
-    "title": "All Rede App",
-    "description": "A white-label app for All Rede customers",
-    "img": allredeLogo,
+    _id: "93b99693-b2a3-4825-8b2d-066d08542e06",
+    title: "All Rede App",
+    description: "A white-label app for All Rede customers",
+    img: allredeLogo,
     technologies: [
       {name: 'React Native', uri: 'https://reactnative.dev/'}, 
       {name: 'Redux', uri: 'https://redux.js.org/'}, 
@@ -66,10 +63,10 @@ export const projects: Project[] = [
     }]
   },
   {
-    "_id": "7b1b8fb5-85b0-4515-bfcf-2d673ecc491f",
-    "title": "Sempre Internet App",
-    "description": "A white-label app for Sempre Internet customers",
-    "img": sempreLogo,
+    _id: "7b1b8fb5-85b0-4515-bfcf-2d673ecc491f",
+    title: "Sempre Internet App",
+    description: "A white-label app for Sempre Internet customers",
+    img: sempreLogo,
     technologies: [
       {name: 'React Native', uri: 'https://reactnative.dev/'}, 
       {name: 'Redux', uri: 'https://redux.js.org/'}, 
@@ -93,9 +90,4 @@ export const projects: Project[] = [
       icon: FaApple
     }]
   },
-]
-
-// Hook para obter projetos traduzidos
-export const useProjects = () => {
-  return useTranslatedProjects(projects);
-};
+]; 

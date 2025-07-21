@@ -1,11 +1,11 @@
 import React from 'react';
 import ExperienceCard from '../ExperienceCard';
-import { useExperiences } from '../../../../data/experiences';
+import { useLocalizedExperiences } from '../../../../utils/getLocalizedData';
 
 import './styles.css';
 
 const ExperienceList: React.FC = () => {
-  const experiences = useExperiences();
+  const experiences = useLocalizedExperiences();
   
   return (
     <section className="experience-list">

@@ -1,11 +1,11 @@
 import React from 'react';
 import ProjectCard from '../ProjectCard';
-import { useProjects } from '../../../../data/projects';
+import { useLocalizedProjects } from '../../../../utils/getLocalizedData';
 
 import './styles.css';
 
 const ProjectList: React.FC = () => {
-  const projects = useProjects();
+  const projects = useLocalizedProjects();
   
   return (
     <section className="project-list">

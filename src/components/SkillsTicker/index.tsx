@@ -1,15 +1,14 @@
 import './styles.css';
 
-import { skills } from '../../data/skills'
-import { useTranslatedSkills } from '../../utils/translationUtils';
+import { useLocalizedSkills } from '../../utils/getLocalizedData';
 
 export const SkillsTicker = () => {
-  const translatedSkills = useTranslatedSkills(skills);
+  const skills = useLocalizedSkills();
 
   return (
     <div className="skills-ticker">
       <div className="skills-ticker__ticker">
-        {[...translatedSkills, ...translatedSkills].map((item, idx) => (
+        {[...skills, ...skills].map((item, idx) => (
           <div
             className="skills-ticker__ticker-item"
             key={`${item._id}-${idx}`}
