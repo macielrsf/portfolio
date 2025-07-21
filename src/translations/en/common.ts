@@ -55,4 +55,10 @@ export const common = {
   back: "Back",
   next: "Next",
   previous: "Previous",
+
+  // Phone
+  phoneSearchText: "My tech stack",
+
+  // Loading
+  loadingText: "Loading...",
 }; 

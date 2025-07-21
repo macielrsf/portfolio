@@ -1,49 +1,60 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react';
 
-const text = 'Minha stack de tecnologias'
+import { useLanguage } from '../contexts/LanguageContext';
 
 export const usePhoneBoot = () => {
-  const [phoneOn, setPhoneOn] = useState(false)
-  const [index, setIndex] = useState(0)
-  const [phoneLoading, setPhoneLoading] = useState(false)
-  const [showApps, setShowApps] = useState(false)
-  const [appsLoading, setAppsLoading] = useState(false)
+  const { t, language } = useLanguage(); // Supondo que você tenha uma chave de idioma
+
+  const [text, setText] = useState(t('phoneSearchText'));
+  const [phoneOn, setPhoneOn] = useState(false);
+  const [index, setIndex] = useState(0);
+  const [phoneLoading, setPhoneLoading] = useState(false);
+  const [showApps, setShowApps] = useState(false);
+  const [appsLoading, setAppsLoading] = useState(false);
+
+  // Atualiza o texto e reinicia a animação quando o idioma muda
+  useEffect(() => {
+    setText(t('phoneSearchText'));
+    setIndex(0);
+    setShowApps(false);
+    setAppsLoading(false);
+  }, [t, language]); // ou só [language] se preferir
 
   useEffect(() => {
-    if (!phoneOn) return
+    if (!phoneOn) return;
     if (index < text.length) {
       const timeout = setTimeout(() => {
-        setIndex(prevIndex => prevIndex + 1)
-      }, 25)
-      return () => clearTimeout(timeout)
+        setIndex(prevIndex => prevIndex + 1);
+      }, 25);
+      return () => clearTimeout(timeout);
     }
     const time = setTimeout(() => {
-      setShowApps(true)
-      setAppsLoading(true)
-    }, 25)
-    return () => clearTimeout(time)
-  }, [index, phoneOn])
+      setShowApps(true);
+      setAppsLoading(true);
+    }, 25);
+    return () => clearTimeout(time);
+  }, [index, phoneOn, text]);
 
   useEffect(() => {
-    if (!phoneOn) return
+    if (!phoneOn) return;
     const time = setTimeout(() => {
-      setPhoneLoading(false)
-    }, 200)
-    return () => clearTimeout(time)
-  }, [phoneOn])
+      setPhoneLoading(false);
+    }, 200);
+    return () => clearTimeout(time);
+  }, [phoneOn]);
 
   useEffect(() => {
-    if (!showApps) return
+    if (!showApps) return;
     const timer = setTimeout(() => {
-      setAppsLoading(false)
-    }, 1500)
-    return () => clearTimeout(timer)
-  }, [showApps])
+      setAppsLoading(false);
+    }, 1500);
+    return () => clearTimeout(timer);
+  }, [showApps]);
 
   const bootPhone = () => {
-    setPhoneOn(true)
-    setPhoneLoading(true)
-  }
+    setPhoneOn(true);
+    setPhoneLoading(true);
+  };
 
   return {
     phoneOn,
@@ -52,5 +63,5 @@ export const usePhoneBoot = () => {
     showApps,
     appsLoading,
     bootPhone
-  }
-}
+  };
+};
