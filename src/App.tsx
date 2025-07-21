@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import './styles/theme.css';
 
 import { Main } from './components/Main'
+import { LanguageProvider } from './contexts/LanguageContext'
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -15,7 +16,9 @@ function App() {
   }, [])
 
   return (
+    <LanguageProvider>
       <Main loading={loading} />
+    </LanguageProvider>
   )
 }
 

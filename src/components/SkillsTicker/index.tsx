@@ -4,6 +4,7 @@ import './styles.css';
 
 import { getSkills } from '../../api-client/skillsApi'
 import { Skill } from '../../types/Skill'
+import { useTranslatedSkills } from '../../utils/translationUtils';
 
 export const SkillsTicker = () => {
   const [skills, setSkills] = useState<Skill[]>([])
@@ -16,10 +17,12 @@ export const SkillsTicker = () => {
     fetchSkills()
   }, [])
 
+  const translatedSkills = useTranslatedSkills(skills);
+
   return (
     <div className="skills-ticker">
       <div className="skills-ticker__ticker">
-        {[...skills, ...skills].map((item, idx) => (
+        {[...translatedSkills, ...translatedSkills].map((item, idx) => (
           <div
             className="skills-ticker__ticker-item"
             key={`${item._id}-${idx}`}

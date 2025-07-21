@@ -3,6 +3,7 @@ import { FiCalendar } from 'react-icons/fi';
 
 import {Experience} from '../../../../types/Experience';
 import BadgeList from '../../../../components/BadgeList';
+import { useLanguage } from '../../../../contexts/LanguageContext';
 
 import './styles.css';
 
@@ -17,6 +18,8 @@ const customStyles = {
 }
 
 const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
+  const { t } = useLanguage();
+
   return (
     <div className="experience-card">
       <div className="experience-content">
@@ -29,7 +32,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
           <span>{experience.period}</span>
         </div>
 
-        <h4 className="experience-technologies">Technologies</h4>
+        <h4 className="experience-technologies">{t('technologies')}</h4>
         <div className="experience-badges">
           <BadgeList items={experience.technologies} badgeNameStyle={customStyles.badgeListStyle} />
         </div>

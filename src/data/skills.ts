@@ -1,4 +1,5 @@
 import { Skill } from '../types/Skill'
+import { useTranslatedSkills } from '../utils/translationUtils';
 
 export const skills: Skill[] = [
     {
@@ -132,3 +133,8 @@ export const skills: Skill[] = [
       "icon": "https://imgur.com/EPjRXTq.png"
     }
   ]
+
+// Hook para obter skills traduzidas
+export const useSkills = () => {
+  return useTranslatedSkills(skills);
+};

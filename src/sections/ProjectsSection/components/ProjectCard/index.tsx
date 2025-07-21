@@ -2,6 +2,7 @@ import React from 'react';
 
 import {Project} from '../../../../types/Project';
 import BadgeList from '../../../../components/BadgeList';
+import { useLanguage } from '../../../../contexts/LanguageContext';
 
 import './styles.css';
 
@@ -19,6 +20,8 @@ const customStyles = {
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
+  const { t } = useLanguage();
+
   return (
     <div className="project-card">
       <div className="project-content">
@@ -30,7 +33,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           </div>
           <BadgeList items={project.buttons} badgeNameStyle={customStyles.badgeListStyle} />
         </div>
-        <h4 className="project-technologies">Technologies</h4>
+        <h4 className="project-technologies">{t('technologies')}</h4>
         <div className="project-badges">
           <BadgeList items={project.technologies} badgeNameStyle={customStyles.badgeTechListStyle} />
         </div>

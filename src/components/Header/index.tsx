@@ -3,6 +3,8 @@ import { FaMoon } from "react-icons/fa";
 import { MdWbSunny } from 'react-icons/md';
 import { TbWorld } from 'react-icons/tb';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { IoLanguage } from 'react-icons/io5';
+import { useLanguage } from '../../contexts/LanguageContext';
 
 import './styles.css';
 
@@ -14,6 +16,7 @@ interface headerProps {
 const Header = ({ showMenu, text }: headerProps) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [theme, setTheme] = useState<'light' | 'dark'>('dark');
+  const { t, toggleLanguage } = useLanguage();
 
     useEffect(() => {
       document.documentElement.setAttribute('data-theme', theme);
@@ -45,10 +48,10 @@ const Header = ({ showMenu, text }: headerProps) => {
 
       {showMenu && (
         <ul className={`menu ${isMobileMenuOpen ? 'open' : ''}`}>
-          <li><a href="#home">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#home">{t('about')}</a></li>
+          <li><a href="#experience">{t('experience')}</a></li>
+          <li><a href="#projects">{t('projects')}</a></li>
+          <li><a href="#contact">{t('contact')}</a></li>
           <li>
             <a onClick={() => setTheme(prev => prev === 'light' ? 'dark' : 'light')}>
               {theme === 'dark' ? ( 
@@ -65,8 +68,8 @@ const Header = ({ showMenu, text }: headerProps) => {
             </a>
           </li>
           <li>
-            <a href="https://wa.me/5537999931412" target="_blank" rel="noopener noreferrer">
-              <TbWorld className="social-media-icon" size={20} />
+            <a onClick={toggleLanguage} style={{ cursor: 'pointer' }}>
+              <IoLanguage className="social-media-icon" size={20} />
             </a>
           </li>
         </ul>

@@ -6,6 +6,7 @@ import OutlineButton from '../../components/OutlineButton';
 import Phone from '../../components/Phone'
 import SocialMedia from '../../components/SocialMedia'
 import { SkillsTicker } from '../../components/SkillsTicker'
+import { useLanguage } from '../../contexts/LanguageContext';
 
 import './styles.css';
 
@@ -20,16 +21,18 @@ const customStyles = {
 }
 
 const HomeSection = () => {
+  const { t } = useLanguage();
+  
   return (
     <div id="home">
       <div className="container">
         <div className="left">
           <img src={avatar} alt="Avatar" className="avatar" />
           <span className="title">
-            Maciel Rodrigues
+            {t('fullName')}
           </span>
           <span className="role">
-            Senior Software Engineer
+            {t('role')}
           </span>
           <SocialMedia />
           <OutlineButton

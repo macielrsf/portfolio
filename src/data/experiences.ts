@@ -1,4 +1,5 @@
 import { Experience } from '../types/Experience';
+import { useTranslatedExperiences } from '../utils/translationUtils';
 
 export const experiences: Experience[] = [
   {
@@ -15,3 +16,8 @@ export const experiences: Experience[] = [
     ],
   },
 ];
+
+// Hook para obter experiências traduzidas
+export const useExperiences = () => {
+  return useTranslatedExperiences(experiences);
+};

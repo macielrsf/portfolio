@@ -6,6 +6,7 @@ import allredeLogo from '../assets/allrede-logo.webp';
 import sempreLogo from '../assets/sempre-logo.jpg';
 
 import { Project } from '../types/Project'
+import { useTranslatedProjects } from '../utils/translationUtils';
 
 export const projects: Project[] = [
   {
@@ -93,3 +94,8 @@ export const projects: Project[] = [
     }]
   },
 ]
+
+// Hook para obter projetos traduzidos
+export const useProjects = () => {
+  return useTranslatedProjects(projects);
+};

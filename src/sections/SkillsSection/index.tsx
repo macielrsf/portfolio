@@ -3,6 +3,7 @@ import { SiRedux, SiTypescript } from 'react-icons/si';
 
 import SectionTitle from '../../components/SectionTitle';
 import BadgeList from '../../components/BadgeList';
+import { useLanguage } from '../../contexts/LanguageContext';
 
 import './styles.css';
 
@@ -16,9 +17,11 @@ const coreSkills = [
 ];
 
 const SkillsSection = () => {
+  const { t } = useLanguage();
+  
   return (
     <div>
-      <SectionTitle title="Core Skills" />
+      <SectionTitle title={t('skillsTitle')} />
       <div className="core-skills-content">
         <BadgeList items={coreSkills} />
       </div>

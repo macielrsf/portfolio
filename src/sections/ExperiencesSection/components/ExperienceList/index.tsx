@@ -1,10 +1,12 @@
 import React from 'react';
 import ExperienceCard from '../ExperienceCard';
-import { experiences } from '../../../../data/experiences';
+import { useExperiences } from '../../../../data/experiences';
 
 import './styles.css';
 
 const ExperienceList: React.FC = () => {
+  const experiences = useExperiences();
+  
   return (
     <section className="experience-list">
       {experiences.map((exp, index) => (

@@ -1,10 +1,13 @@
 import SectionTitle from '../../components/SectionTitle';
 import ProjectList from './components/ProjectList';
+import { useLanguage } from '../../contexts/LanguageContext';
 
 const ProjectsSection = () => {
+  const { t } = useLanguage();
+  
   return (
     <div id="projects">
-      <SectionTitle title="Projects" />
+      <SectionTitle title={t('projectsTitle')} />
       <ProjectList />
     </div>
   );
