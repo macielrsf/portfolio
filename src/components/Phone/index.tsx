@@ -1,3 +1,5 @@
+import { useState } from 'react'
+import { Search } from 'lucide-react'
 import { Clock } from '../Clock'
 import { AppList } from '../AppList'
 import onGif from '../../assets/ligar-gif.gif'
@@ -5,10 +7,7 @@ import onPng from '../../assets/ligar.png'
 import LoadingScreen from '../LoadingScreen'
 import { usePhoneBoot } from '../../hooks/usePhoneBoot'
 import { PaginationDots } from './../PaginationDots'
-import { useEffect, useState } from 'react'
-import { Search } from 'lucide-react'
-import { Technology } from '../../types/Technology'
-import { getTechnologies } from '../../api-client/technologiesApi'
+import { technologies } from '../../data/technologies'
 
 import './styles.css';
 
@@ -16,22 +15,12 @@ const Phone = () => {
   const { phoneOn, phoneLoading, text, showApps, appsLoading, bootPhone } =
     usePhoneBoot()
 
-  const [technologies, setTechnologies] = useState<Technology[]>([])
-
   const pageSize = 16
   const [currentPage, setCurrentPage] = useState(0)
 
   const onChange = (newPage: number) => {
     setCurrentPage(newPage)
   }
-
-  useEffect(() => {
-    const fetchTechnologies = async () => {
-      const response = await getTechnologies()
-      setTechnologies(response)
-    }
-    fetchTechnologies()
-  }, [])
 
   return (
     <div className="phone">
