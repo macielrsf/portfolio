@@ -110,10 +110,11 @@
 
 /* Desktop (≥ 1024px) */
 @media (min-width: 1024px) {
-  .menu {
+  .menu,
+  .menu.open {
     position: static;
     display: flex !important;
-    flex-direction: row;
+    flex-direction: row !important;
     background: none;
     padding: 15px;
     width: auto;

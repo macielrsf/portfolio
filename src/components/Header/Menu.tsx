@@ -50,33 +50,31 @@ const Menu = ({
 
   return (
     <ul ref={menuRef} className={`menu ${isOpen ? 'open' : ''}`}>
-      <div className={`menu-content${isOpen ? ' open' : ''}`}>
-        <li><a href="#home">{t('about')}</a></li>
-        <li><a href="#experience">{t('experience')}</a></li>
-        <li><a href="#projects">{t('projects')}</a></li>
-        <li><a href="#contact">{t('contact')}</a></li>
-        <li>
-          <a onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
-            {theme === 'dark' ? (
-              <MdWbSunny className="social-media-icon" size={20} />
-            ) : (
-              <FaMoon className="social-media-icon" size={20} />
-            )}
-          </a>
-        </li>
-        <li>
-          <a onClick={toggleLanguage} className="language-toggle">
-            <ReactWorldFlag
-              code={language === 'en' ? 'BR' : 'US'}
-              className="language-toggle-flag"
-              title={language === 'en' ? 'Português (Brasil)' : 'English (US)'}
-            />
-            <span>
-              {language === 'en' ? 'PT-BR' : 'EN'}
-            </span>
-          </a>
-        </li>
-      </div>
+      <li><a href="#home">{t('about')}</a></li>
+      <li><a href="#experience">{t('experience')}</a></li>
+      <li><a href="#projects">{t('projects')}</a></li>
+      <li><a href="#contact">{t('contact')}</a></li>
+      <li>
+        <a onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
+          {theme === 'dark' ? (
+            <MdWbSunny className="social-media-icon" size={20} />
+          ) : (
+            <FaMoon className="social-media-icon" size={20} />
+          )}
+        </a>
+      </li>
+      <li>
+        <a onClick={toggleLanguage} className="language-toggle">
+          <ReactWorldFlag
+            code={language === 'en' ? 'BR' : 'US'}
+            className="language-toggle-flag"
+            title={language === 'en' ? 'Português (Brasil)' : 'English (US)'}
+          />
+          <span>
+            {language === 'en' ? 'PT-BR' : 'EN'}
+          </span>
+        </a>
+      </li>
     </ul>
   );
 };
