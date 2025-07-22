@@ -16,7 +16,7 @@ const Logo: React.FC<LogoProps> = ({ text, className }) => {
 
   return (
     <h2 className={`logo${className ? ` ${className}` : ''}`}>
-      <a href="/">
+      <a href="/portfolio">
         <span>&lt; </span>{formatNameWithSpaces(text)}<span> /&gt;</span>
       </a>
     </h2>
