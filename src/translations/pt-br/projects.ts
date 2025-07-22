@@ -55,6 +55,8 @@ export const projects: Project[] = [
       {name: 'Flipper', uri: 'https://fbflipper.com/'},
       {name: 'Jest', uri: 'https://jestjs.io/'},
       {name: 'Testing Library', uri: 'https://callstack.github.io/react-native-testing-library/'},
+      {name: 'React Hook Form', uri: 'https://react-hook-form.com/'},
+      {name: 'Figma', uri: 'https://www.figma.com/'},
     ],
     buttons: [{
       id: "0154472d-55c0-402e-9e94-066596d6db22",
@@ -83,6 +85,8 @@ export const projects: Project[] = [
       {name: 'Flipper', uri: 'https://fbflipper.com/'},
       {name: 'Jest', uri: 'https://jestjs.io/'},
       {name: 'Testing Library', uri: 'https://callstack.github.io/react-native-testing-library/'},
+      {name: 'React Hook Form', uri: 'https://react-hook-form.com/'},
+      {name: 'Figma', uri: 'https://www.figma.com/'},
     ],
     buttons: [{
       id: "0154472d-55c0-402e-9e94-066596d6db22",
@@ -111,6 +115,8 @@ export const projects: Project[] = [
       {name: 'Flipper', uri: 'https://fbflipper.com/'},
       {name: 'Jest', uri: 'https://jestjs.io/'},
       {name: 'Testing Library', uri: 'https://callstack.github.io/react-native-testing-library/'},
+      {name: 'React Hook Form', uri: 'https://react-hook-form.com/'},
+      {name: 'Figma', uri: 'https://www.figma.com/'},
     ],
     buttons: [{
       id: "0154472d-55c0-402e-9e94-066596d6db22",
@@ -140,6 +146,7 @@ export const projects: Project[] = [
       {name: 'Jest', uri: 'https://jestjs.io/'},
       {name: 'Testing Library', uri: 'https://callstack.github.io/react-native-testing-library/'},
       {name: 'React Hook Form', uri: 'https://react-hook-form.com/'},
+      {name: 'Figma', uri: 'https://www.figma.com/'},
     ],
     buttons: [{
       id: "a57ada99-44d2-482a-9e79-e91ccedd0957",
