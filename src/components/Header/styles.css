@@ -51,11 +51,13 @@
   position: absolute;
   top: 60px;
   right: 50px;
-  background-color: var(--color-text);
+  background-color: var(--color-header-background);
   flex-direction: column;
-  padding: 10px;
-  border-radius: 4px;
+  padding: 15px;
+  border-radius: 8px;
   width: 200px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: 1px solid var(--color-border-light);
 }
 
 .menu.open {
@@ -64,33 +66,62 @@
 
 .menu li {
   list-style: none;
-  margin: 10px 0;
+  margin: 8px 0;
 }
 
-.menu li a {
-  text-decoration: none;
-  color: var(--color-header-background);
-  font-size: 16px;
-}
-
-.menu li a:hover {
-  color: var(--color-primary-hover);
-}
-
-.social-media-icon {
-  vertical-align: middle;
+/* Menu buttons styling */
+.menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
   color: var(--color-text);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  width: 100%;
+  text-align: left;
+  font-family: 'Inter', sans-serif;
 }
 
-.menu.open .social-media-icon {
-  color: var(--color-header-background) !important;
+.menu-button:hover {
+  background-color: var(--color-overlay-light);
+  color: var(--color-primary);
+  transform: translateX(4px);
 }
 
+.menu-button:active {
+  transform: translateX(2px);
+}
+
+/* Theme toggle specific styling */
+.theme-toggle {
+  color: var(--color-text);
+  font-weight: 600;
+  display: flex;
+}
+
+.theme-toggle:hover {
+  color: var(--color-primary);
+}
+
+.theme-toggle svg {
+  vertical-align: middle;
+}
+
+/* Language toggle specific styling */
 .language-toggle {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 8px;
   cursor: pointer;
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.language-toggle:hover {
+  color: var(--color-primary);
 }
 
 .language-toggle span {
@@ -101,7 +132,8 @@
 .language-toggle-flag {
   width: 1.3em;
   height: 1.3em;
-  box-shadow: 0 0 2px #0002;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
 }
 
 /* Tablet (≥ 768px) */
@@ -125,17 +157,37 @@
     display: flex !important;
     flex-direction: row !important;
     background: none;
-    padding: 15px;
+    padding: 0;
     width: auto;
+    box-shadow: none;
+    border: none;
+    margin-right: 20px;
   }
 
   .menu li {
-    margin: 0 30px;
+    margin: 0 15px;
   }
 
-  .menu li a {
+  .menu-button {
     color: var(--color-text);
     font-size: 15px;
+    padding: 8px 12px;
+    width: auto;
+    text-align: center;
+  }
+
+  .menu-button:hover {
+    background-color: var(--color-overlay-light);
+    color: var(--color-primary);
+    transform: translateY(-2px);
+  }
+
+  .menu-button:active {
+    transform: translateY(0);
+  }
+
+  .language-toggle {
+    padding: 8px 12px;
   }
 
   .menu-toggle {

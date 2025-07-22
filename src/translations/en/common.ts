@@ -5,9 +5,14 @@ export const common = {
   projects: "Projects",
   contact: "Contact",
   
+  // Theme
+  lightMode: "Light Mode",
+  darkMode: "Dark Mode",
+  
   // Home Section
-    fullName: "Maciel Rodrigues",
-    role: "Senior Software Engineer",
+  fullName: "Maciel Rodrigues",
+  role: "Senior Software Engineer",
+  viewResume: "View Resume",
   
   // Experience Section
   experienceTitle: "Experience",

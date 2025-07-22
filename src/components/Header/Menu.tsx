@@ -46,25 +46,33 @@ const Menu = ({
     };
   }, [isOpen, onClose, buttonRef]);
 
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    onClose(); // Fecha o menu após clicar
+  };
+
   if (!showMenu) return null;
 
   return (
     <ul ref={menuRef} className={`menu ${isOpen ? 'open' : ''}`}>
-      <li><a href="#home">{t('about')}</a></li>
-      <li><a href="#experience">{t('experience')}</a></li>
-      <li><a href="#projects">{t('projects')}</a></li>
-      <li><a href="#contact">{t('contact')}</a></li>
+      <li><button className="menu-button" onClick={() => scrollToSection('home')}>{t('about')}</button></li>
+      <li><button className="menu-button" onClick={() => scrollToSection('experience')}>{t('experience')}</button></li>
+      <li><button className="menu-button" onClick={() => scrollToSection('projects')}>{t('projects')}</button></li>
+      <li><button className="menu-button" onClick={() => scrollToSection('contact')}>{t('contact')}</button></li>
       <li>
-        <a onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
+        <button className="menu-button theme-toggle" onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
           {theme === 'dark' ? (
-            <MdWbSunny className="social-media-icon" size={20} />
+            <MdWbSunny size={20} />
           ) : (
-            <FaMoon className="social-media-icon" size={20} />
+            <FaMoon size={20} />
           )}
-        </a>
+        </button>
       </li>
       <li>
-        <a onClick={toggleLanguage} className="language-toggle">
+        <button onClick={toggleLanguage} className="menu-button language-toggle">
           <ReactWorldFlag
             code={language === 'en' ? 'BR' : 'US'}
             className="language-toggle-flag"
@@ -73,7 +81,7 @@ const Menu = ({
           <span>
             {language === 'en' ? 'PT-BR' : 'EN'}
           </span>
-        </a>
+        </button>
       </li>
     </ul>
   );

@@ -36,7 +36,7 @@ const HomeSection = () => {
           </span>
           <SocialMedia />
           <OutlineButton
-            text="View Resume"
+            text={t('viewResume')}
             icon={<FiArrowRightCircle />}
             href="https://drive.google.com/file/d/1206y_ne7f6uism9RhoRhAYYweuVS6czT/view?usp=sharing"
             style={customStyles.outlineButton}
