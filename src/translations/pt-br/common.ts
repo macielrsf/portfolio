@@ -10,7 +10,7 @@ export const common = {
   role: "Engenheiro de Software Sênior",
   
   // Experience Section
-  experienceTitle: "Experiência Profissional",
+  experienceTitle: "Experiência",
   current: "Atual",
   months: "meses",
   years: "anos",

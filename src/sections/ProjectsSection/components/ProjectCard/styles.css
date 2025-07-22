@@ -121,24 +121,24 @@
   }
 
   .project-content {
-    padding: 40px;
+    padding: 30px;
   }
 
   .project-img {
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
   }
 
   .project-title {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .project-description {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .project-technologies {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .project-left,

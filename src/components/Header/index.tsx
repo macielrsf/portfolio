@@ -27,7 +27,7 @@ const Header = ({ showMenu, text }: headerProps) => {
 
   return (
     <header className="header">
-      <Logo text={text} />
+      <Logo text={text} className="header-logo" />
 
       <button ref={buttonRef} className="menu-toggle" onClick={toggleMobileMenu} aria-label="Toggle Menu">
         <GiHamburgerMenu size={24} />

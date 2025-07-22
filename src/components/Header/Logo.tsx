@@ -2,9 +2,10 @@ import React, { useMemo } from 'react';
 
 interface LogoProps {
   text: string;
+  className?: string;
 }
 
-const Logo: React.FC<LogoProps> = ({ text }) => {
+const Logo: React.FC<LogoProps> = ({ text, className }) => {
   const formatNameWithSpaces = useMemo(() => (text: string): string => {
     let newText = '';
     for (let i = 0; i < text.length; i++) {
@@ -14,7 +15,7 @@ const Logo: React.FC<LogoProps> = ({ text }) => {
   }, []);
 
   return (
-    <h2 className="logo">
+    <h2 className={`logo${className ? ` ${className}` : ''}`}>
       <a href="/">
         <span>&lt; </span>{formatNameWithSpaces(text)}<span> /&gt;</span>
       </a>
