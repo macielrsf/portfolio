@@ -188,7 +188,7 @@ export const projects: Project[] = [
       {name: 'Git', uri: 'https://git-scm.com/'},
       {name: 'Figma', uri: 'https://www.figma.com/'},
       {name: 'Vite', uri: 'https://vitejs.dev/'},
-      {name: 'Vercel', uri: 'https://vercel.com/'},
+      {name: 'GitHub Pages', uri: 'https://pages.github.com/'},
     ],
     buttons: [{
       id: "0154472d-55c0-402e-9e94-066596d6db22",
