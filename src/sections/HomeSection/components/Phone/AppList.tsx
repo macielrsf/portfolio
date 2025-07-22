@@ -1,4 +1,4 @@
-import { Technology } from '../types/Technology'
+import { Technology } from '../../../../types/Technology'
 
 interface AppListProps {
   currentPage: number

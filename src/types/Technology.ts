@@ -3,7 +3,7 @@ interface BaseTechnology {
   slug?: string;
   icon: string;
   appIcon: string;
-  experience: number;
+  startDate: string; // ISO date string (YYYY-MM-DD)
 }
 
 export type CreateTechnology = BaseTechnology;

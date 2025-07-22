@@ -1,21 +1,32 @@
 import { useState } from 'react'
 import { Search } from 'lucide-react'
-import { Clock } from '../Clock'
-import { AppList } from '../AppList'
-import onGif from '../../assets/ligar-gif.gif'
-import onPng from '../../assets/ligar.png'
-import LoadingScreen from '../LoadingScreen'
-import { usePhoneBoot } from '../../hooks/usePhoneBoot'
-import { PaginationDots } from './../PaginationDots'
-import { technologies } from '../../data/technologies'
-import { useLanguage } from '../../contexts/LanguageContext'
+import { Clock } from './Clock'
+import { AppList } from './AppList'
+import SelectedApp from './SelectedApp'
+import onGif from '../../../../assets/ligar-gif.gif'
+import onPng from '../../../../assets/ligar.png'
+import LoadingScreen from '../../../../components/LoadingScreen'
+import { usePhoneBoot } from '../../../../hooks/usePhoneBoot'
+import { PaginationDots } from './PaginationDots'
+import { technologies } from '../../../../data/technologies'
+
 
 import './styles.css';
 
 const Phone = () => {
-  const { t } = useLanguage()
-  const { phoneOn, phoneLoading, text, showApps, appsLoading, bootPhone, selectedApp, appTransitioning, openApp, closeApp } =
-    usePhoneBoot()
+  const { 
+    phoneOn, 
+    phoneLoading, 
+    text, 
+    showApps, 
+    appsLoading, 
+    bootPhone, 
+    selectedApp, 
+    appTransitioning, 
+    transitioningApp, 
+    openApp, 
+    closeApp 
+  } = usePhoneBoot();
 
   const pageSize = 16
   const [currentPage, setCurrentPage] = useState(0)
@@ -24,24 +35,28 @@ const Phone = () => {
     setCurrentPage(newPage)
   }
 
-  if (selectedApp || appTransitioning === 'opening' || appTransitioning === 'closing') {
+  // Renderiza o SelectedApp durante a transição ou quando selecionado
+  const showApp = appTransitioning || selectedApp;
+  const appToShow = appTransitioning ? transitioningApp : selectedApp;
+
+  if (showApp && appToShow) {
     return (
-      <div className={`phone-app-opened ${appTransitioning === 'opening' ? 'app-opening' : ''} ${appTransitioning === 'closing' ? 'app-closing' : ''}`}>
-        <button
-          className="close-app-btn"
-          onClick={closeApp}
-        >
-          ×
-        </button>
-        {selectedApp && (
-          <>
-            <img className="app-details-icon" src={selectedApp.appIcon} alt="" />
-            <span className="app-details-title">{selectedApp.name}</span>
-            <span className="app-details-experience">{t('experience')}: {selectedApp.experience} {t('years')}</span>
-          </>
-        )}
-      </div>
+      <SelectedApp 
+        app={appToShow} 
+        onClose={closeApp} 
+        appTransitioning={appTransitioning || undefined} 
+      />
     )
+  }
+
+  if (selectedApp || appTransitioning === 'opening' || appTransitioning === 'closing') {
+    return selectedApp ? (
+      <SelectedApp 
+        app={selectedApp} 
+        onClose={closeApp} 
+        appTransitioning={appTransitioning || undefined} 
+      />
+    ) : null;
   }
 
   return (

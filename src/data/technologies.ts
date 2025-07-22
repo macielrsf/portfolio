@@ -28,7 +28,7 @@ export const technologies: Technology[] = [
     slug: "react-native",
     icon: reactNativeIcon,
     appIcon: reactNativeIcon,
-    experience: 7
+    startDate: "2017-01-01"
   },
   {
     _id: "682d11b0e0e8b8ba4134df99",
@@ -36,7 +36,7 @@ export const technologies: Technology[] = [
     slug: "ts",
     icon: typescriptIcon,
     appIcon: typescriptIcon,
-    experience: 3
+    startDate: "2021-01-01"
   },
   {
     _id: "682d009c34e57a1daab77345",
@@ -44,15 +44,15 @@ export const technologies: Technology[] = [
     slug: "redux",
     icon: reduxIcon,
     appIcon: reduxIcon,
-    experience: 7
+    startDate: "2017-01-01"
   },
   {
-    _id: "682d0b50e0e8b8ba4134df5b",
+    _id: "682d0b50e0e8b8ba4134df5c",
     name: "React",
     slug: "react",
     icon: reactIcon,
     appIcon: reactIcon,
-    experience: 5
+    startDate: "2019-01-01"
   },
   {
     _id: "682cfe1d34e57a1daab7731f",
@@ -60,7 +60,7 @@ export const technologies: Technology[] = [
     slug: "nodejs",
     icon: nodeIcon,
     appIcon: nodeIcon,
-    experience: 6
+    startDate: "2018-01-01"
   },
   {
     _id: "682d013b34e57a1daab77351",
@@ -68,7 +68,7 @@ export const technologies: Technology[] = [
     slug: "laravel",
     icon: laravelIcon,
     appIcon: laravelIcon,
-    experience: 9
+    startDate: "2015-01-01"
   },
   {
     _id: "682d009c34e57a1daab77346",
@@ -76,7 +76,7 @@ export const technologies: Technology[] = [
     slug: "php",
     icon: phpIcon,
     appIcon: phpIcon,
-    experience: 9
+    startDate: "2015-01-01"
   },
   {
     _id: "682d013b34e57a1daab77352",
@@ -84,7 +84,7 @@ export const technologies: Technology[] = [
     slug: "python",
     icon: pythonIcon,
     appIcon: pythonIcon,
-    experience: 5
+    startDate: "2019-01-01"
   },
   {
     _id: "682d009c34e57a1daab77347",
@@ -92,7 +92,7 @@ export const technologies: Technology[] = [
     slug: "docker",
     icon: dockerIcon,
     appIcon: dockerIcon,
-    experience: 2
+    startDate: "2022-01-01"
   },
   {
     _id: "682d009c34e57a1daab77348",
@@ -100,7 +100,7 @@ export const technologies: Technology[] = [
     slug: "jest",
     icon: jestIcon,
     appIcon: jestIcon,
-    experience: 7
+    startDate: "2017-01-01"
   },
   {
     _id: "682d009c34e57a1daab77349",
@@ -108,7 +108,7 @@ export const technologies: Technology[] = [
     slug: "js",
     icon: javascriptIcon,
     appIcon: javascriptIcon,
-    experience: 9
+    startDate: "2015-01-01"
   },
   {
     _id: "682d013b34e57a1daab77353",
@@ -116,7 +116,7 @@ export const technologies: Technology[] = [
     slug: "html",
     icon: htmlIcon,
     appIcon: htmlIcon,
-    experience: 9
+    startDate: "2015-01-01"
   },
   {
     _id: "682d0c21e0e8b8ba4134df77",
@@ -124,7 +124,7 @@ export const technologies: Technology[] = [
     slug: "css",
     icon: cssIcon,
     appIcon: cssIcon,
-    experience: 9
+    startDate: "2015-01-01"
   },
   {
     _id: "682d0c37e0e8b8ba4134df7d",
@@ -132,7 +132,7 @@ export const technologies: Technology[] = [
     slug: "aws",
     icon: awsIcon,
     appIcon: awsIcon,
-    experience: 3
+    startDate: "2021-01-01"
   },
   {
     _id: "682d0d66e0e8b8ba4134df83",
@@ -140,7 +140,7 @@ export const technologies: Technology[] = [
     slug: "postgresql",
     icon: postgresqlIcon,
     appIcon: postgresqlIcon,
-    experience: 9
+    startDate: "2015-01-01"
   },
   {
     _id: "682d0d81e0e8b8ba4134df89",
@@ -148,7 +148,7 @@ export const technologies: Technology[] = [
     slug: "fastlane",
     icon: fastlaneIcon,
     appIcon: fastlaneIcon,
-    experience: 7
+    startDate: "2017-01-01"
   },
   {
     _id: "682d11dce0e8b8ba4134dfa5",
@@ -156,7 +156,7 @@ export const technologies: Technology[] = [
     slug: "firebase",
     icon: firebaseIcon,
     appIcon: firebaseIcon,
-    experience: 3
+    startDate: "2021-01-01"
   },
   {
     _id: "682d11c5e0e8b8ba4134df9f",
@@ -164,7 +164,7 @@ export const technologies: Technology[] = [
     slug: "git",
     icon: gitIcon,
     appIcon: gitIcon,
-    experience: 9
+    startDate: "2015-01-01"
   },
   {
     _id: "682d11eae0e8b8ba4134dfab",
@@ -172,7 +172,7 @@ export const technologies: Technology[] = [
     slug: "figma",
     icon: figmaIcon,
     appIcon: figmaIcon,
-    experience: 4
+    startDate: "2020-01-01"
   },
   {
     _id: "682d12a7e0e8b8ba4134dfb7",
@@ -180,6 +180,6 @@ export const technologies: Technology[] = [
     slug: "vite",
     icon: viteIcon,
     appIcon: viteIcon,
-    experience: 2
+    startDate: "2022-01-01"
   },
 ];

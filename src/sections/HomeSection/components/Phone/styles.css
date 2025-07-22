@@ -1,7 +1,7 @@
 .phone {
   width: 250px;
   height: 500px;
-  background-image: url('../../assets/phone.png');
+  background-image: url('../../../../assets/phone.png');
   background-size: 239% 121%;
   background-position: center 41.999%;
   background-repeat: no-repeat;
@@ -18,7 +18,7 @@
 .phone-app-opened {
   width: 250px;
   height: 500px;
-  background-image: url('../../assets/phone_app_opened.png');
+  background-image: url('../../../../assets/phone_app_opened.png');
   background-size: 239% 121%;
   background-position: center 41.999%;
   background-repeat: no-repeat;

@@ -4,7 +4,7 @@ import { useLanguage } from '../contexts/LanguageContext';
 import { Technology } from '../types/Technology'
 
 export const usePhoneBoot = () => {
-  const { t, language } = useLanguage(); // Supondo que você tenha uma chave de idioma
+  const { t, language } = useLanguage();
 
   const [text, setText] = useState(t('phoneSearchText'));
   const [phoneOn, setPhoneOn] = useState(false);
@@ -14,6 +14,7 @@ export const usePhoneBoot = () => {
   const [appsLoading, setAppsLoading] = useState(false);
   const [selectedApp, setSelectedApp] = useState<Technology | null>(null);
   const [appTransitioning, setAppTransitioning] = useState<'opening' | 'closing' | null>(null);
+  const [transitioningApp, setTransitioningApp] = useState<Technology | null>(null);
 
   // Atualiza o texto e reinicia a animação quando o idioma muda
   useEffect(() => {
@@ -21,7 +22,7 @@ export const usePhoneBoot = () => {
     setIndex(0);
     setShowApps(false);
     setAppsLoading(false);
-  }, [t, language]); // ou só [language] se preferir
+  }, [t, language]);
 
   useEffect(() => {
     if (!phoneOn) return;
@@ -60,18 +61,22 @@ export const usePhoneBoot = () => {
   };
 
   const openApp = (app: Technology) => {
+    setTransitioningApp(app);
     setAppTransitioning('opening');
     setTimeout(() => {
       setSelectedApp(app);
       setAppTransitioning(null);
+      setTransitioningApp(null);
     }, 300); // duração do efeito de abertura
   };
 
   const closeApp = () => {
+    setTransitioningApp(selectedApp);
     setAppTransitioning('closing');
     setTimeout(() => {
       setSelectedApp(null);
       setAppTransitioning(null);
+      setTransitioningApp(null);
     }, 300); // duração do efeito de fechamento
   };
 
@@ -84,6 +89,7 @@ export const usePhoneBoot = () => {
     bootPhone,
     selectedApp,
     appTransitioning,
+    transitioningApp,
     openApp,
     closeApp
   };
