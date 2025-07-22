@@ -13,4 +13,4 @@ export const experiences: Experience[] = [
       {name: 'Laravel'}
     ],
   },
-]; 
+];

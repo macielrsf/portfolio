@@ -38,7 +38,7 @@ const HomeSection = () => {
           <OutlineButton
             text="View Resume"
             icon={<FiArrowRightCircle />}
-            href="https://meucurriculo.com"
+            href="https://drive.google.com/file/d/1206y_ne7f6uism9RhoRhAYYweuVS6czT/view?usp=sharing"
             style={customStyles.outlineButton}
           />
         </div>

@@ -73,6 +73,10 @@
   color: var(--color-text);
 }
 
+.menu.open .social-media-icon {
+  color: var(--color-header-background) !important;
+}
+
 .language-toggle {
   display: flex;
   align-items: center;

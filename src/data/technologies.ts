@@ -2,7 +2,6 @@ import { Technology } from "../types/Technology";
 
 import reduxIcon from '../assets/technologies/redux.png';
 import reactIcon from '../assets/technologies/react.png';
-import reactNativeIcon from '../assets/technologies/react-native.png';
 import typescriptIcon from '../assets/technologies/typescript.png';
 import nodeIcon from '../assets/technologies/node.png';
 import laravelIcon from '../assets/technologies/laravel.png';
@@ -26,8 +25,8 @@ export const technologies: Technology[] = [
     _id: "682d0b50e0e8b8ba4134df5b",
     name: "React Native",
     slug: "react-native",
-    icon: reactNativeIcon,
-    appIcon: reactNativeIcon,
+    icon: reactIcon,
+    appIcon: reactIcon,
     experience: 7
   },
   {
@@ -47,7 +46,7 @@ export const technologies: Technology[] = [
     experience: 7
   },
   {
-    _id: "682d0b50e0e8b8ba4134df5c",
+    _id: "682d0b50e0e8b8ba4134df5b",
     name: "React",
     slug: "react",
     icon: reactIcon,

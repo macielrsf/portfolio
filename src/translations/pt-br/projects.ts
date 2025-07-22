@@ -1,9 +1,14 @@
+import { FcAndroidOs } from "react-icons/fc";
+import { FaApple } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+
 import { Project } from '../../types/Project';
 import hubsoftLogo from '../../assets/projects-images/hubsoft-logo.webp';
 import allredeLogo from '../../assets/projects-images/allrede-logo.webp';
 import sempreLogo from '../../assets/projects-images/sempre-logo.jpg';
-import { FcAndroidOs } from "react-icons/fc";
-import { FaApple } from "react-icons/fa";
+
+import githubLogo from '../../assets/projects-images/github.jpeg';
+
 
 export const projects: Project[] = [
   {
@@ -88,6 +93,25 @@ export const projects: Project[] = [
       name: "iOS",
       uri: "https://apps.apple.com/br/app/sempre-internet/id1523528026",
       icon: FaApple
+    }]
+  },
+  {
+    _id: "7b1b8fb5-85b0-4515-bfcf-2d673ecc491g",
+    title: "React Native GPT",
+    description: "Um app de chat em React Native com integração com ChatGPT usando SSE (Server-Sent Events), proporcionando respostas em tempo real.",
+    img: githubLogo,
+    technologies: [
+      {name: 'React Native', uri: 'https://reactnative.dev/'}, 
+      {name: 'Typescript', uri: 'https://www.typescriptlang.org/'},
+      {name: 'Hooks', uri: 'https://react.dev/reference/react/hooks'},
+      {name: 'SSE', uri: 'https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events'},
+      {name: 'ChatGPT', uri: 'https://openai.com/api/'},
+    ],
+    buttons: [{
+      id: "0154472d-55c0-402e-9e94-066596d6db22",
+      name: "GitHub",
+      uri: "https://github.com/macielrsf/react-native-gpt",
+      icon: FaGithub
     }]
   },
 ]; 
