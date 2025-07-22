@@ -15,6 +15,23 @@
   z-index: 2;
 }
 
+.phone-app-opened {
+  width: 250px;
+  height: 500px;
+  background-image: url('../../assets/phone_app_opened.png');
+  background-size: 239% 121%;
+  background-position: center 41.999%;
+  background-repeat: no-repeat;
+  border-radius: 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0px 10px 200px var(--color-phone-shadow));
+  z-index: 2;
+}
+
 .img__container {
   margin-right: 20px;
   position: relative;
@@ -147,4 +164,75 @@
 .apps {
   width: 235px;
   height: 224px;
+}
+
+.app-opening {
+  animation: appOpen 0.3s forwards;
+}
+
+.app-closing {
+  animation: appClose 0.3s forwards;
+}
+
+@keyframes appOpen {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes appClose {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+
+.close-app-btn {
+  background: rgba(0,0,0,0.2);
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+  margin: 15px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 10;
+}
+
+.close-app-btn:hover {
+  background: rgba(0,0,0,0.4);
+}
+
+.app-details-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.app-details-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.app-details-experience {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
 }

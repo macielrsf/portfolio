@@ -3,6 +3,7 @@ interface BaseTechnology {
   slug?: string;
   icon: string;
   appIcon: string;
+  experience: number;
 }
 
 export type CreateTechnology = BaseTechnology;

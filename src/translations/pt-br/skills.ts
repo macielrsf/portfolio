@@ -19,12 +19,9 @@ export const skills: Skill[] = [
   { _id: "682cf59fb3845c24335e2226", name: "SQL", icon: "https://imgur.com/gAgCl8v.png" },
   { _id: "682cf5b1b3845c24335e222c", name: "NoSql", icon: "https://imgur.com/pfVwXnr.png" },
   { _id: "682cf5c3b3845c24335e2232", name: "Redis", icon: "https://imgur.com/KdOkSsO.png" },
-  { _id: "682cf5e3b3845c24335e2238", name: "Elasticsearch", icon: "https://imgur.com/iMfY8PY.png" },
   { _id: "682cf61ab3845c24335e2244", name: "JWT", icon: "https://imgur.com/OGztFTg.png" },
   { _id: "682cf62fb3845c24335e224a", name: "CORS", icon: "https://imgur.com/LCWJeCe.png" },
   { _id: "682cf644b3845c24335e2250", name: "SCRUM", icon: "https://imgur.com/zmVju0W.png" },
-  { _id: "682cf655b3845c24335e2256", name: "Kanban", icon: "https://imgur.com/9STow8y.png" },
-  { _id: "682cf666b3845c24335e225c", name: "Swagger", icon: "https://imgur.com/LKSfKNi.png" },
   { _id: "682cf67ab3845c24335e2262", name: "Responsividade", icon: "https://imgur.com/oVbXADb.png" },
   { _id: "682cf690b3845c24335e2268", name: "UI/UX", icon: "https://imgur.com/EPjRXTq.png" }
 ]; 

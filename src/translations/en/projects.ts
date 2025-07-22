@@ -1,7 +1,7 @@
 import { Project } from '../../types/Project';
-import hubsoftLogo from '../../assets/hubsoft-logo.webp';
-import allredeLogo from '../../assets/allrede-logo.webp';
-import sempreLogo from '../../assets/sempre-logo.jpg';
+import hubsoftLogo from '../../assets/projects-images/hubsoft-logo.webp';
+import allredeLogo from '../../assets/projects-images/allrede-logo.webp';
+import sempreLogo from '../../assets/projects-images/sempre-logo.jpg';
 import { FcAndroidOs } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
 

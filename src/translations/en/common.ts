@@ -21,7 +21,7 @@ export const common = {
   viewCode: "View Code",
   
   // Skills Section
-  skillsTitle: "Skills",
+  skillsTitle: "Core Skills",
   
   // Contact Section
   contactTitle: "Contact",

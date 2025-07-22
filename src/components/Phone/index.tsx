@@ -8,11 +8,13 @@ import LoadingScreen from '../LoadingScreen'
 import { usePhoneBoot } from '../../hooks/usePhoneBoot'
 import { PaginationDots } from './../PaginationDots'
 import { technologies } from '../../data/technologies'
+import { useLanguage } from '../../contexts/LanguageContext'
 
 import './styles.css';
 
 const Phone = () => {
-  const { phoneOn, phoneLoading, text, showApps, appsLoading, bootPhone } =
+  const { t } = useLanguage()
+  const { phoneOn, phoneLoading, text, showApps, appsLoading, bootPhone, selectedApp, appTransitioning, openApp, closeApp } =
     usePhoneBoot()
 
   const pageSize = 16
@@ -20,6 +22,26 @@ const Phone = () => {
 
   const onChange = (newPage: number) => {
     setCurrentPage(newPage)
+  }
+
+  if (selectedApp || appTransitioning === 'opening' || appTransitioning === 'closing') {
+    return (
+      <div className={`phone-app-opened ${appTransitioning === 'opening' ? 'app-opening' : ''} ${appTransitioning === 'closing' ? 'app-closing' : ''}`}>
+        <button
+          className="close-app-btn"
+          onClick={closeApp}
+        >
+          ×
+        </button>
+        {selectedApp && (
+          <>
+            <img className="app-details-icon" src={selectedApp.appIcon} alt="" />
+            <span className="app-details-title">{selectedApp.name}</span>
+            <span className="app-details-experience">{t('experience')}: {selectedApp.experience} {t('years')}</span>
+          </>
+        )}
+      </div>
+    )
   }
 
   return (
@@ -65,6 +87,7 @@ const Phone = () => {
                       apps={technologies}
                       currentPage={currentPage}
                       pageSize={pageSize}
+                      onAppClick={openApp}
                     />
                     <PaginationDots
                       currentPage={currentPage}
