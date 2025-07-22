@@ -19,14 +19,15 @@ import firebaseIcon from '../assets/technologies/firebase.png';
 import gitIcon from '../assets/technologies/git.png';
 import figmaIcon from '../assets/technologies/figma.png';
 import viteIcon from '../assets/technologies/vite.png';
+import reactNativeIcon from '../assets/technologies/react-native.png';
 
 export const technologies: Technology[] = [
   {
     _id: "682d0b50e0e8b8ba4134df5b",
     name: "React Native",
     slug: "react-native",
-    icon: reactIcon,
-    appIcon: reactIcon,
+    icon: reactNativeIcon,
+    appIcon: reactNativeIcon,
     experience: 7
   },
   {

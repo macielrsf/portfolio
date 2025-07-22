@@ -227,12 +227,14 @@
 
 .app-details-title {
   font-family: 'Inter', sans-serif;
+  color: #ffffff;
   font-weight: bold;
   font-size: 18px;
   margin: 10px 0;
 }
 
-.app-details-experience {
+.app-details-experience { 
   font-family: 'Inter', sans-serif;
+  color: #ffffff;
   font-size: 14px;
 }

@@ -3,6 +3,7 @@
   --color-text: #ffffff;
   --color-background: #121212;
   --color-header-background: #050038;
+  --color-text-reverse: #000000;
   
   /* Cores de gradiente e fundo */
   --color-gradient-start: rgba(5, 0, 56, 1);
@@ -50,6 +51,7 @@
   --color-text: #000000;
   --color-background: #ffffff;
   --color-header-background: #f8f9fa;
+  --color-text-reverse: #ffffff;
   
   /* Cores de gradiente e fundo */
   --color-gradient-start: rgba(248, 249, 250, 1);
