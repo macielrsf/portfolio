@@ -1,4 +1,4 @@
-import { Technology } from '@types/Technology';
+import { Technology } from '../types/Technology';
 
 import reduxIcon from '@assets/technologies/redux.png';
 import reactIcon from '@assets/technologies/react.png';

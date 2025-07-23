@@ -12,7 +12,7 @@
       "@translations/*": ["translations/*"],
       "@types/*": ["types/*"],
       "@utils/*": ["utils/*"]
-    }
+    },
   },
   "references": [
     { "path": "./tsconfig.app.json" },
