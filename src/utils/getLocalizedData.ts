@@ -1,6 +1,6 @@
-import { useLanguage } from '../contexts/LanguageContext';
-import { experiences as experiencesPT, projects as projectsPT, skills as skillsPT } from '../translations/pt-br';
-import { experiences as experiencesEN, projects as projectsEN, skills as skillsEN } from '../translations/en';
+import useLanguage from '@hooks/useLanguage';
+import { experiences as experiencesPT, projects as projectsPT, skills as skillsPT } from '@translations/pt-br';
+import { experiences as experiencesEN, projects as projectsEN, skills as skillsEN } from '@translations/en';
 
 export function useLocalizedExperiences() {
   const { language } = useLanguage();

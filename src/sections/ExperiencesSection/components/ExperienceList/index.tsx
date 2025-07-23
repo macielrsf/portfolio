@@ -1,6 +1,6 @@
 import React from 'react';
 import ExperienceCard from '../ExperienceCard';
-import { useLocalizedExperiences } from '../../../../utils/getLocalizedData';
+import { useLocalizedExperiences } from '@utils/getLocalizedData';
 
 import './styles.css';
 

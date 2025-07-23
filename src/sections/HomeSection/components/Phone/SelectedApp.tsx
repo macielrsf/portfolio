@@ -1,6 +1,6 @@
 import { Technology } from '../../../../types/Technology';
-import { useExperienceYears } from '../../../../hooks/useExperienceYears';
-import { useLanguage } from '../../../../contexts/LanguageContext';
+import { useExperienceYears } from '@hooks/useExperienceYears';
+import useLanguage from '@hooks/useLanguage';
 
 interface SelectedAppProps {
   app: Technology;

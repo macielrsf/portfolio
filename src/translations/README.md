@@ -20,7 +20,7 @@ src/translations/
 ### 1. Importar o hook
 
 ```tsx
-import { useLanguage } from '../contexts/LanguageContext';
+import useLanguage from '../hooks/useLanguage';
 
 const MyComponent = () => {
   const { t, language, toggleLanguage, setLanguage } = useLanguage();
@@ -59,6 +59,8 @@ export const common = {
 ### 3. Usar em componentes
 
 ```tsx
+import useLanguage from '../hooks/useLanguage';
+
 const { t } = useLanguage();
 
 // Tradução simples
@@ -90,7 +92,7 @@ Retorna um objeto com:
 ### Exemplo completo
 
 ```tsx
-import { useLanguage } from '../contexts/LanguageContext';
+import useLanguage from '../hooks/useLanguage';
 
 const Header = () => {
   const { t, language, toggleLanguage } = useLanguage();

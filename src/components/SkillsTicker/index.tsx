@@ -1,6 +1,6 @@
 import './styles.css';
 
-import { useLocalizedSkills } from '../../utils/getLocalizedData';
+import { useLocalizedSkills } from '@utils/getLocalizedData';
 
 export const SkillsTicker = () => {
   const skills = useLocalizedSkills();

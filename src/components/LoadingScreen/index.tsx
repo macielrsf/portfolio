@@ -1,6 +1,6 @@
 import './styles.css';
 
-import { useLanguage } from '../../contexts/LanguageContext';
+import useLanguage from '@hooks/useLanguage';
 
 const LoadingScreen = () => {
   const { t } = useLanguage();

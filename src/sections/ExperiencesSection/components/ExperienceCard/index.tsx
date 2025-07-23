@@ -2,8 +2,8 @@ import React from 'react';
 import { FiCalendar } from 'react-icons/fi';
 
 import {Experience} from '../../../../types/Experience';
-import BadgeList from '../../../../components/BadgeList';
-import { useLanguage } from '../../../../contexts/LanguageContext';
+import BadgeList from '@components/BadgeList';
+import useLanguage from '@hooks/useLanguage';
 
 import './styles.css';
 

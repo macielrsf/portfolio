@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectCard from '../ProjectCard';
-import { useLocalizedProjects } from '../../../../utils/getLocalizedData';
+import { useLocalizedProjects } from '@utils/getLocalizedData';
 
 import './styles.css';
 

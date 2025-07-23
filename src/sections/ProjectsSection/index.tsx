@@ -1,6 +1,6 @@
-import SectionTitle from '../../components/SectionTitle';
+import SectionTitle from '@components/SectionTitle';
 import ProjectList from './components/ProjectList';
-import { useLanguage } from '../../contexts/LanguageContext';
+import useLanguage from '@hooks/useLanguage';
 
 const ProjectsSection = () => {
   const { t } = useLanguage();

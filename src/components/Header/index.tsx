@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
-import { useLanguage } from '../../contexts/LanguageContext';
+import useLanguage from '@hooks/useLanguage';
 import Menu from './Menu';
 import Logo from './Logo';
 

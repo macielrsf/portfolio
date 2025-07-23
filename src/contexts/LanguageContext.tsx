@@ -1,28 +1,27 @@
-import React, { createContext, useContext, useState, useEffect } from "react";
-import * as ptBr from '../translations/pt-br';
-import * as en from '../translations/en';
+import React, { createContext, useState, useEffect } from "react";
+import * as ptBr from '@translations/pt-br';
+import * as en from '@translations/en';
 
-type Language = "pt-br" | "en";
+export type Language = "pt-br" | "en";
 
-type Translations = typeof ptBr;
+export type Translations = typeof ptBr;
 
 const translations: Record<Language, Translations> = {
   "pt-br": ptBr,
   "en": en,
 };
 
-interface LanguageContextType {
+export interface LanguageContextType {
   language: Language;
   toggleLanguage: () => void;
   setLanguage: (lang: Language) => void;
   t: (key: string, namespace?: keyof Translations) => string;
 }
 
-const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
+export const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [language, setLanguageState] = useState<Language>(() => {
-    // Verifica se há um idioma salvo no localStorage
     const savedLanguage = localStorage.getItem('language') as Language;
     return savedLanguage && ['pt-br', 'en'].includes(savedLanguage) ? savedLanguage : 'en';
   });
@@ -51,7 +50,6 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   };
 
   useEffect(() => {
-    // Salva o idioma no localStorage sempre que mudar
     localStorage.setItem('language', language);
   }, [language]);
 
@@ -60,12 +58,4 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       {children}
     </LanguageContext.Provider>
   );
-};
-
-export const useLanguage = (): LanguageContextType => {
-  const context = useContext(LanguageContext);
-  if (context === undefined) {
-    throw new Error('useLanguage must be used within a LanguageProvider');
-  }
-  return context;
 }; 

@@ -1,25 +1,25 @@
-import { Technology } from "../types/Technology";
+import { Technology } from '@types/Technology';
 
-import reduxIcon from '../assets/technologies/redux.png';
-import reactIcon from '../assets/technologies/react.png';
-import typescriptIcon from '../assets/technologies/typescript.png';
-import nodeIcon from '../assets/technologies/node.png';
-import laravelIcon from '../assets/technologies/laravel.png';
-import phpIcon from '../assets/technologies/php.png';
-import pythonIcon from '../assets/technologies/python.png';
-import dockerIcon from '../assets/technologies/docker.png';
-import jestIcon from '../assets/technologies/jest.png';
-import javascriptIcon from '../assets/technologies/javascript.png';
-import htmlIcon from '../assets/technologies/html.png';
-import cssIcon from '../assets/technologies/css.png';
-import awsIcon from '../assets/technologies/aws.png';
-import postgresqlIcon from '../assets/technologies/postgresql.png';
-import fastlaneIcon from '../assets/technologies/fastlane.png';
-import firebaseIcon from '../assets/technologies/firebase.png';
-import gitIcon from '../assets/technologies/git.png';
-import figmaIcon from '../assets/technologies/figma.png';
-import viteIcon from '../assets/technologies/vite.png';
-import reactNativeIcon from '../assets/technologies/react-native.png';
+import reduxIcon from '@assets/technologies/redux.png';
+import reactIcon from '@assets/technologies/react.png';
+import typescriptIcon from '@assets/technologies/typescript.png';
+import nodeIcon from '@assets/technologies/node.png';
+import laravelIcon from '@assets/technologies/laravel.png';
+import phpIcon from '@assets/technologies/php.png';
+import pythonIcon from '@assets/technologies/python.png';
+import dockerIcon from '@assets/technologies/docker.png';
+import jestIcon from '@assets/technologies/jest.png';
+import javascriptIcon from '@assets/technologies/javascript.png';
+import htmlIcon from '@assets/technologies/html.png';
+import cssIcon from '@assets/technologies/css.png';
+import awsIcon from '@assets/technologies/aws.png';
+import postgresqlIcon from '@assets/technologies/postgresql.png';
+import fastlaneIcon from '@assets/technologies/fastlane.png';
+import firebaseIcon from '@assets/technologies/firebase.png';
+import gitIcon from '@assets/technologies/git.png';
+import figmaIcon from '@assets/technologies/figma.png';
+import viteIcon from '@assets/technologies/vite.png';
+import reactNativeIcon from '@assets/technologies/react-native.png';
 
 export const technologies: Technology[] = [
   {

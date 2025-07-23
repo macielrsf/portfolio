@@ -1,8 +1,8 @@
 import React from 'react';
 
 import {Project} from '../../../../types/Project';
-import BadgeList from '../../../../components/BadgeList';
-import { useLanguage } from '../../../../contexts/LanguageContext';
+import BadgeList from '@components/BadgeList';
+import useLanguage from '@hooks/useLanguage';
 
 import './styles.css';
 

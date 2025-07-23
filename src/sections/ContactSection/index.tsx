@@ -1,6 +1,6 @@
-import SectionTitle from '../../components/SectionTitle';
-import SocialMedia from '../../components/SocialMedia';
-import { useLanguage } from '../../contexts/LanguageContext';
+import SectionTitle from '@components/SectionTitle';
+import SocialMedia from '@components/SocialMedia';
+import useLanguage from '@hooks/useLanguage';
 
 import './styles.css';
 

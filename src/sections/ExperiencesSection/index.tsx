@@ -1,6 +1,6 @@
-import SectionTitle from '../../components/SectionTitle';
+import SectionTitle from '@components/SectionTitle';
 import ExperienceList from './components/ExperienceList';
-import { useLanguage } from '../../contexts/LanguageContext';
+import useLanguage from '@hooks/useLanguage';
 
 const ExperiencesSection = () => {
   const { t } = useLanguage();

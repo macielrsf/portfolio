@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react'
 
-import './styles/theme.css';
+import '@styles/theme.css';
 
-import { Main } from './components/Main'
-import { LanguageProvider } from './contexts/LanguageContext'
+import { Main } from '@components/Main'
+import { LanguageProvider } from '@contexts/LanguageContext'
 
 function App() {
   const [loading, setLoading] = useState(true)

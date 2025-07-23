@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import { useLanguage } from '../contexts/LanguageContext';
+import useLanguage from './useLanguage';
 import { Technology } from '../types/Technology'
 
 export const usePhoneBoot = () => {

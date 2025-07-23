@@ -3,12 +3,12 @@ import { Search } from 'lucide-react'
 import { Clock } from './Clock'
 import { AppList } from './AppList'
 import SelectedApp from './SelectedApp'
-import onGif from '../../../../assets/ligar-gif.gif'
-import onPng from '../../../../assets/ligar.png'
-import LoadingScreen from '../../../../components/LoadingScreen'
-import { usePhoneBoot } from '../../../../hooks/usePhoneBoot'
+import onGif from '@assets/ligar-gif.gif'
+import onPng from '@assets/ligar.png'
+import LoadingScreen from '@components/LoadingScreen'
+import { usePhoneBoot } from '@hooks/usePhoneBoot'
 import { PaginationDots } from './PaginationDots'
-import { technologies } from '../../../../data/technologies'
+import { technologies } from '@data/technologies'
 
 
 import './styles.css';

@@ -1,9 +1,9 @@
 import { FaReact, FaRocket, FaNode } from 'react-icons/fa';
 import { SiRedux, SiTypescript } from 'react-icons/si';
 
-import SectionTitle from '../../components/SectionTitle';
-import BadgeList from '../../components/BadgeList';
-import { useLanguage } from '../../contexts/LanguageContext';
+import SectionTitle from '@components/SectionTitle';
+import BadgeList from '@components/BadgeList';
+import useLanguage from '@hooks/useLanguage';
 
 import './styles.css';
 
