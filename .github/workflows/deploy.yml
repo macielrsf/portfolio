@@ -27,9 +27,6 @@ jobs:
       
     - name: Build project
       run: yarn build
-
-    - name: Deploy to GitHub Pages
-      run: yarn deploy:manual
       
     - name: Upload build artifacts
       uses: actions/upload-artifact@v4
