@@ -6,6 +6,7 @@ import ContactSection from '@sections/ContactSection';
 
 import Header from '@components/Header'
 import LoadingScreen from '@components/LoadingScreen'
+import FloatingActionButton from '@components/FloatingActionButton'
 
 interface mainProps {
   loading: boolean
@@ -24,6 +25,7 @@ export const Main = ({ loading }: mainProps) => {
         <ExperiencesSection />
         <ProjectsSection />
         <ContactSection />
+        <FloatingActionButton />
       </div>
     </div>
   )

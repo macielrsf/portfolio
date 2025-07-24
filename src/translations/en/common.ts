@@ -66,4 +66,8 @@ export const common = {
 
   // Loading
   loadingText: "Loading...",
+  
+  // Floating Action Button
+  backToTop: "Back to Top",
+  goToAbout: "Go to About",
 }; 

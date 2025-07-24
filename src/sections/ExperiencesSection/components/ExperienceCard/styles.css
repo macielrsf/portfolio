@@ -1,15 +1,17 @@
+/* MOBILE FIRST (smartphones, até 767px) */
 .experience-card {
-  width: 60%;
+  width: 90%;
   align-self: center;
   color: var(--color-text);
   background-color: transparent;
   border: 1px solid;
   border-radius: 12px;
   border-color: var(--color-border);
+  margin-bottom: 2em;
 }
 
 .experience-content {
-  padding: 20px;
+  padding: 1.2em;
 }
 
 .experience-card:hover {
@@ -18,14 +20,14 @@
 
 .experience-title {
   font-family: 'Inter', sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 4px;
 }
 
 .experience-company {
   font-family: 'Inter', sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 500;
   color: var(--color-text-secondary);
   margin-bottom: 12px;
@@ -33,7 +35,7 @@
 
 .experience-description {
   font-family: 'Inter', sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.5;
   color: var(--color-text-light);
 }
@@ -42,7 +44,7 @@
   font-family: 'Inter', sans-serif;
   display: flex;
   align-items: center;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: var(--color-text-muted);
   margin-top: 16px;
 }
@@ -53,7 +55,7 @@
 
 .experience-technologies {
   font-family: 'Inter', sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 500;
   color: var(--color-text-secondary);
   margin: 20px 20px 0 0;
@@ -63,4 +65,66 @@
   justify-content: flex-start;
   align-items: flex-start;
   margin-top: 16px;
+}
+
+/* TABLET (mínimo 768px) */
+@media (min-width: 768px) {
+  .experience-card {
+    width: 80%;
+  }
+
+  .experience-content {
+    padding: 20px;
+  }
+
+  .experience-title {
+    font-size: 1.2rem;
+  }
+
+  .experience-company {
+    font-size: 1rem;
+  }
+
+  .experience-description {
+    font-size: 0.9rem;
+  }
+
+  .experience-period {
+    font-size: 0.85rem;
+  }
+
+  .experience-technologies {
+    font-size: 0.9rem;
+  }
+}
+
+/* DESKTOP (mínimo 1200px) */
+@media (min-width: 1200px) {
+  .experience-card {
+    width: 60%;
+  }
+
+  .experience-content {
+    padding: 20px;
+  }
+
+  .experience-title {
+    font-size: 1.25rem;
+  }
+
+  .experience-company {
+    font-size: 1rem;
+  }
+
+  .experience-description {
+    font-size: 0.9rem;
+  }
+
+  .experience-period {
+    font-size: 0.85rem;
+  }
+
+  .experience-technologies {
+    font-size: 0.9rem;
+  }
 }

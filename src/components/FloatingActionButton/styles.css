@@ -1,0 +1,124 @@
+.floating-action-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  box-shadow: 0 4px 20px rgba(75, 75, 255, 0.3);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1000;
+  opacity: 0;
+  transform: scale(0.8) translateY(20px);
+  animation: fabEnter 0.3s ease-out forwards;
+}
+
+.floating-action-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 25px rgba(75, 75, 255, 0.4);
+  background: linear-gradient(135deg, var(--color-primary-hover), var(--color-accent-light));
+}
+
+.floating-action-button:active {
+  transform: scale(0.95);
+  transition: transform 0.1s ease;
+}
+
+.floating-action-button svg {
+  transition: transform 0.2s ease;
+}
+
+.floating-action-button:hover svg {
+  transform: translateY(-2px);
+}
+
+@keyframes fabEnter {
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Tablet (≥ 768px) */
+@media (min-width: 768px) {
+  .floating-action-button {
+    bottom: 40px;
+    right: 40px;
+    width: 65px;
+    height: 65px;
+  }
+}
+
+/* Desktop (≥ 1024px) */
+@media (min-width: 1024px) {
+  .floating-action-button {
+    bottom: 50px;
+    right: 50px;
+    width: 70px;
+    height: 70px;
+  }
+}
+
+/* Efeito de pulso quando aparece */
+.floating-action-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  opacity: 0;
+  animation: fabPulse 2s infinite;
+  z-index: -1;
+}
+
+@keyframes fabPulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+/* Acessibilidade */
+.floating-action-button:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Redução de movimento para usuários que preferem */
+@media (prefers-reduced-motion: reduce) {
+  .floating-action-button {
+    transition: none;
+    animation: none;
+  }
+  
+  .floating-action-button::before {
+    animation: none;
+  }
+  
+  .floating-action-button:hover {
+    transform: none;
+  }
+  
+  .floating-action-button:hover svg {
+    transform: none;
+  }
+} 
