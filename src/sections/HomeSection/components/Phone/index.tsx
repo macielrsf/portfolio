@@ -1,15 +1,17 @@
 import { useState } from 'react'
 import { Search } from 'lucide-react'
+
+import LoadingScreen from '@components/LoadingScreen'
+import { usePhoneBoot } from '@hooks/usePhoneBoot'
+import { technologies } from '@data/technologies'
+
+import onGif from '@assets/ligar-gif.gif'
+import onPng from '@assets/ligar.png'
+
 import { Clock } from './Clock'
 import { AppList } from './AppList'
 import SelectedApp from './SelectedApp'
-import onGif from '@assets/ligar-gif.gif'
-import onPng from '@assets/ligar.png'
-import LoadingScreen from '@components/LoadingScreen'
-import { usePhoneBoot } from '@hooks/usePhoneBoot'
 import { PaginationDots } from './PaginationDots'
-import { technologies } from '@data/technologies'
-
 
 import './styles.css';
 
@@ -30,9 +32,17 @@ const Phone = () => {
 
   const pageSize = 16
   const [currentPage, setCurrentPage] = useState(0)
+  const [powerBtnDisabled, setPowerBtnDisabled] = useState(false)
 
   const onChange = (newPage: number) => {
     setCurrentPage(newPage)
+  }
+
+  const handleBootPhone = () => {
+    if (!powerBtnDisabled) {
+      setPowerBtnDisabled(true)
+      bootPhone()
+    }
   }
 
   // Renderiza o SelectedApp durante a transição ou quando selecionado
@@ -62,20 +72,22 @@ const Phone = () => {
   return (
     <div className="phone">
       {!phoneOn ? (
-        <div className="img__container">
+        <div className="img-container">
           <div className="power-btn-wrapper">
             <span className="pulse-ring"></span>
             <img
-              className="phone__png"
+              className="phone-png"
               src={onPng}
               alt="imagem do ícone de ligar"
-              onClick={bootPhone}
+              onClick={handleBootPhone}
+              style={{ pointerEvents: powerBtnDisabled ? 'none' : 'auto', opacity: powerBtnDisabled ? 0.5 : 1 }}
             />
             <img
-              className="phone__gif"
+              className="phone-gif"
               src={onGif}
               alt="gif do ícone de ligar"
-              onClick={bootPhone}
+              onClick={handleBootPhone}
+              style={{ pointerEvents: powerBtnDisabled ? 'none' : 'auto', opacity: powerBtnDisabled ? 0.5 : 1 }}
             />
           </div>
         </div>
@@ -86,14 +98,14 @@ const Phone = () => {
           ) : (
             <>
               <Clock />
-              <div className="phone__search">
-                <Search size={14} className="phone__search-icon" />
+              <div className="phone-search">
+                <Search size={14} className="phone-search-icon" />
                 <p>{text}</p>
               </div>
 
-              <div className={`phone__apps ${showApps ? 'show' : ''}`}>
+              <div className={`phone-apps ${showApps ? 'show' : ''}`}>
                 {appsLoading ? (
-                  <div className="load__app">
+                  <div className="load-app">
                     <LoadingScreen />
                   </div>
                 ) : (

@@ -32,20 +32,20 @@
   z-index: 2;
 }
 
-.img__container {
+.img-container {
   margin-right: 20px;
   position: relative;
   width: 40px;
   height: 40px;
 }
 
-.phone__gif {
+.phone-gif {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
-.phone__png,
-.phone__gif {
+.phone-png,
+.phone-gif {
   width: 60px;
   height: 60px;
   position: absolute;
@@ -53,7 +53,7 @@
   z-index: 1;
 }
 
-.img__container:hover .phone__gif {
+.img-container:hover .phone-gif {
   opacity: 1;
 }
 
@@ -91,20 +91,20 @@
   }
 }
 
-.phone__apps {
+.phone-apps {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
-.phone__apps.show {
+.phone-apps.show {
   opacity: 1;
 }
 
-.load__app {
+.load-app {
   width: 235px;
   height: 275px;
 }
 
-.load__app .loading-screen .spinner {
+.load-app .loading-screen .spinner {
   margin-top: 90px;
 }
 
@@ -127,7 +127,7 @@
   margin-top: 10px;
 }
 
-.phone__search {
+.phone-search {
   display: flex;
   color: var(--color-search-text);
   background-color: var(--color-search-bg);
@@ -140,24 +140,24 @@
   align-items: center;
 }
 
-.phone__search-icon {
+.phone-search-icon {
   margin: 0 10px;
 }
 
-.phone__apps {
+.phone-apps {
   display: flex;
   flex-wrap: wrap;
   margin-left: 15px;
 }
 
-.phone__apps img {
+.phone-apps img {
   width: 35px;
   height: 35px;
   margin: 10px;
   transition: transform 0.5s ease;
 }
 
-.phone__apps img:hover {
+.phone-apps img:hover {
   transform: scale(1.2);
 }
 
