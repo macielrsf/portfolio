@@ -3,12 +3,12 @@ import { FaApple } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
 import { Project } from '../../types/Project';
-import hubsoftLogo from '../../assets/projects-images/hubsoft-logo.webp';
-import allredeLogo from '../../assets/projects-images/allrede-logo.webp';
-import sempreLogo from '../../assets/projects-images/sempre-logo.jpg';
-import rap10Logo from '../../assets/projects-images/rap10-logo.png';
-import githubLogo from '../../assets/projects-images/github.jpeg';
-import g3Logo from '../../assets/projects-images/g3telecom-logo.webp';
+import hubsoftLogo from '@assets/projects-images/hubsoft-logo.webp';
+import allredeLogo from '@assets/projects-images/allrede-logo.webp';
+import sempreLogo from '@assets/projects-images/sempre-logo.jpg';
+import rap10Logo from '@assets/projects-images/rap10-logo.png';
+import githubLogo from '@assets/projects-images/github.jpeg';
+import g3Logo from '@assets/projects-images/g3telecom-logo.webp';
 
 
 export const projects: Project[] = [
@@ -133,7 +133,7 @@ export const projects: Project[] = [
   {
     _id: "316cc286-4b80-473c-9f78-761810318175",
     title: "App RAP10 Internet",
-    description: "An app for RAP10 Internet customers.",
+    description: "Um app para clientes da RAP10 Internet.",
     img: rap10Logo,
     technologies: [
       {name: 'React Native', uri: 'https://reactnative.dev/'}, 

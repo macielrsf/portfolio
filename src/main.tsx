@@ -11,13 +11,6 @@ createRoot(document.getElementById('root')!).render(
     <HashRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        {/*
-          <Route path="/projects/:repository" element={<ProjectDetailsPage />} />
-          <Route
-            path="/projects/technology/:slug"
-            element={<ProjectsByStackPage />}
-          />
-        */}
       </Routes>
     </HashRouter>
   </StrictMode>

@@ -3,12 +3,12 @@ import { FaApple } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
 import { Project } from '../../types/Project';
-import hubsoftLogo from '../../assets/projects-images/hubsoft-logo.webp';
-import allredeLogo from '../../assets/projects-images/allrede-logo.webp';
-import sempreLogo from '../../assets/projects-images/sempre-logo.jpg';
-import githubLogo from '../../assets/projects-images/github.jpeg';
-import rap10Logo from '../../assets/projects-images/rap10-logo.png';
-import g3Logo from '../../assets/projects-images/g3telecom-logo.webp';
+import hubsoftLogo from '@assets/projects-images/hubsoft-logo.webp';
+import allredeLogo from '@assets/projects-images/allrede-logo.webp';
+import sempreLogo from '@assets/projects-images/sempre-logo.jpg';
+import githubLogo from '@assets/projects-images/github.jpeg';
+import rap10Logo from '@assets/projects-images/rap10-logo.png';
+import g3Logo from '@assets/projects-images/g3telecom-logo.webp';
 
 export const projects: Project[] = [
   {

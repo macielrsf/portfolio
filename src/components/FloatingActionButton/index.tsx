@@ -9,6 +9,8 @@ const FloatingActionButton = () => {
   const { t } = useLanguage();
   const [isVisible, setIsVisible] = useState(false);
   const [isAtBottom, setIsAtBottom] = useState(false);
+  const [isHiding, setIsHiding] = useState(false);
+  const [isAnimatingIn, setIsAnimatingIn] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,6 +34,22 @@ const FloatingActionButton = () => {
     };
   }, []);
 
+  useEffect(() => {
+    if (isVisible) {
+      setIsHiding(false);
+      setIsAnimatingIn(true);
+      const timeout = setTimeout(() => setIsAnimatingIn(false), 1000); // igual ao tempo da animação fab-enter
+      return () => clearTimeout(timeout);
+    }
+    if (!isVisible && !isHiding) {
+      setIsHiding(true);
+      const timeout = setTimeout(() => {
+        setIsHiding(false);
+      }, 1000); // igual ao tempo da animação fab-exit
+      return () => clearTimeout(timeout);
+    }
+  }, [isVisible, isHiding, isAnimatingIn]);
+
   const scrollToHome = () => {
     const homeSection = document.getElementById('home');
     if (homeSection) {
@@ -39,11 +57,17 @@ const FloatingActionButton = () => {
     }
   };
 
-  if (!isVisible) return null;
+  const getFabClass = () => {
+    if (isHiding) return 'floating-action-button fab-exit';
+    if (isAnimatingIn) return 'floating-action-button fab-enter';
+    return 'floating-action-button';
+  };
+
+  if (!isVisible && !isHiding) return null;
 
   return (
     <button
-      className="floating-action-button"
+      className={getFabClass()}
       onClick={scrollToHome}
       title={isAtBottom ? t('backToTop') : t('goToAbout')}
       aria-label={isAtBottom ? t('backToTop') : t('goToAbout')}
