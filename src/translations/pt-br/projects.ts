@@ -156,6 +156,26 @@ export const projects: Project[] = [
     }]
   },
   {
+    _id: "7b1b8fb5-85b0-4515-bfcf-2d673ecc491h",
+    title: "React Native Clean Architecture - DDD & SOLID",
+    description: "Um projeto de exemplo de arquitetura limpa em React Native, seguindo os princípios DDD (Domain-Driven Design) e SOLID.",
+    img: githubLogo,
+    technologies: [
+      {name: 'React Native', uri: 'https://reactnative.dev/'}, 
+      {name: 'Typescript', uri: 'https://www.typescriptlang.org/'},
+      {name: 'Hooks', uri: 'https://react.dev/reference/react/hooks'},
+      {name: 'DDD', uri: 'https://www.domainlanguage.com/ddd/'},
+      {name: 'SOLID', uri: 'https://www.digitalocean.com/community/conceptual_articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design'},
+      {name: 'Tanstack React Query', uri: 'https://tanstack.com/query/latest/docs/framework/react/overview'},
+    ],
+    buttons: [{
+      id: "0154472d-55c0-402e-9e94-066596d6db22",
+      name: "GitHub",
+      uri: "https://github.com/macielrsf/react-native-clean-arch-domain",
+      icon: FaGithub
+    }]
+  },
+  {
     _id: "7b1b8fb5-85b0-4515-bfcf-2d673ecc491g",
     title: "React Native GPT",
     description: "Um app de chat em React Native com integração com ChatGPT usando SSE (Server-Sent Events), proporcionando respostas em tempo real.",
