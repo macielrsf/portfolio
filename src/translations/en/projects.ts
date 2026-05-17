@@ -195,25 +195,20 @@ export const projects: Project[] = [
     }]
   },
   {
-    _id: "7b1b8fb5-85b0-4515-bfcf-2d673ecc491h",
-    title: "Portfolio",
-    description: "My portfolio, developed with React and TypeScript.",
+    _id: "8f6c7117-118d-46e2-bbd7-9af78fb4c0f5",
+    title: "Digital Nomad App",
+    description: "A mobile app project for digital nomads, focused on supporting travel, remote work, and location-independent routines.",
     img: githubLogo,
     technologies: [
-      {name: 'React', uri: 'https://react.dev/'}, 
+      {name: 'React Native', uri: 'https://reactnative.dev/'}, 
       {name: 'Typescript', uri: 'https://www.typescriptlang.org/'},
       {name: 'Hooks', uri: 'https://react.dev/reference/react/hooks'},
-      {name: 'CSS', uri: 'https://developer.mozilla.org/en-US/docs/Web/CSS'},
-      {name: 'HTML', uri: 'https://developer.mozilla.org/en-US/docs/Web/HTML'},
       {name: 'Git', uri: 'https://git-scm.com/'},
-      {name: 'Figma', uri: 'https://www.figma.com/'},
-      {name: 'Vite', uri: 'https://vitejs.dev/'},
-      {name: 'GitHub Pages', uri: 'https://pages.github.com/'},
     ],
     buttons: [{
       id: "0154472d-55c0-402e-9e94-066596d6db22",
       name: "GitHub",
-      uri: "https://github.com/macielrsf/portfolio",
+      uri: "https://github.com/macielrsf/digital-nomad-app",
       icon: FaGithub
     }]
   },
