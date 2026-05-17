@@ -34,7 +34,7 @@ export const common = {
   sendMessage: "Enviar Mensagem",
   getInTouch: "Entre em Contato",
   location: "Santo Antonio do Monte, MG, Brasil",
-  copyright: "© 2025 Maciel Rodrigues",
+  copyright: "© {year} Maciel Rodrigues",
   
   // Footer
   allRightsReserved: "Todos os direitos reservados",

@@ -6,6 +6,7 @@ import './styles.css';
 
 const ContactSection = () => {
   const { t } = useLanguage();
+  const currentYear = new Date().getFullYear().toString();
 
   return (
     <div id="contact">
@@ -18,7 +19,7 @@ const ContactSection = () => {
         <span className="contact-text">macielrsf@gmail.com</span>
         <SocialMedia />
         <div className="contact-copyright-content">
-          <span className="contact-copyright-text">{t('copyright')}</span>
+          <span className="contact-copyright-text">{t('copyright').replace('{year}', currentYear)}</span>
         </div>
       </div>
     </div>

@@ -34,7 +34,7 @@ export const common = {
   sendMessage: "Send Message",
   getInTouch: "Get In Touch",
   location: "Santo Antonio do Monte, MG, Brazil",
-  copyright: "© 2025 Maciel Rodrigues",
+  copyright: "© {year} Maciel Rodrigues",
   
   // Footer
   allRightsReserved: "All rights reserved",
