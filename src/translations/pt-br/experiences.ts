@@ -47,7 +47,7 @@ export const experiences: Experience[] = [
     title: 'Engenheiro Mobile & FullStack Sênior',
     company: 'Hubsoft Brasil LTDA - Híbrido',
     location: 'Santo Antônio do Monte, MG, Brasil',
-    description: 'Como Engenheiro de Software Sênior na Hubsoft, lidero o desenvolvimento de soluções mobile escaláveis usando React Native para mais de 450 provedores de internet em todo o Brasil. Gerencio todo o ciclo de vida dos aplicativos com foco em performance e automação CI/CD. Sou responsável pela evolução de dois produtos principais: um app white-label para clientes finais e um app de campo utilizado por técnicos para ordens de serviço.',
+    description: 'Como Engenheiro de Software Sênior na Hubsoft, liderei o desenvolvimento de soluções mobile escaláveis usando React Native para mais de 450 provedores de internet em todo o Brasil. Gerenciei todo o ciclo de vida dos aplicativos com foco em performance e automação CI/CD. Fui responsável pela evolução de dois produtos principais: um app white-label para clientes finais e um app de campo utilizado por técnicos para ordens de serviço.',
     period: 'Janeiro de 2017 - Dezembro de 2025',
     startDate: '2017-01-01',
     endDate: '2025-12-31',

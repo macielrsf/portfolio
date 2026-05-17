@@ -47,7 +47,7 @@ export const experiences: Experience[] = [
     title: 'Senior Mobile & FullStack Engineer',
     company: 'Hubsoft Brasil LTDA - Hybrid',
     location: 'Santo Antônio do Monte, MG, Brazil',
-    description: 'As a Senior Software Engineer at Hubsoft, I lead the development of scalable mobile solutions using React Native for over 450 ISPs (Internet Service Providers) across Brazil. I manage the full app lifecycle with a strong focus on performance and CI/CD automation. I’m responsible for improving two main products: a white-label app for end customers and a field service app used by technicians for service order tasks.',
+    description: 'As a Senior Software Engineer at Hubsoft, I led the development of scalable mobile solutions using React Native for over 450 ISPs (Internet Service Providers) across Brazil. I managed the full app lifecycle with a strong focus on performance and CI/CD automation. I was responsible for improving two main products: a white-label app for end customers and a field service app used by technicians for service order tasks.',
     period: 'January 2017 - December 2025',
     startDate: '2017-01-01',
     endDate: '2025-12-31',
